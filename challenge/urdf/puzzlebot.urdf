@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="puzzlebot" >
+
+<! -- Define links -->
+
+<link name="base_footprint"/>
+<link name="base_link/>
+<link name="wheel_r"/>
+<link name="wheel_l"/>
+<link name="case_link"/>
+
+
+<!-- Define joints -->
+
+< joint name="base_link_j" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+</joint>
+
+< joint name="wheel_r_j" type="continous">
+    <parent link="base_link/>
+    <child link="wheel_r"/>
+    <origin xyz="0.052 -0.095 0.0025" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+</joint>
+
+< joint name="wheel_l_j" type="continous">
+    <parent link="base_link/>
+    <child link="wheel_l"/>
+    <origin xyz="0.052 0.095 -0.0025" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+</joint>
+
+<joint name="case_joint" type="fixed">
+    parent link="base_footprint"/>
+    <child link="case_link"/>
+    <origin xyz="-0.095 0 -0.03" rpy="0 0 0"/>
+</joint>
+</robot>
