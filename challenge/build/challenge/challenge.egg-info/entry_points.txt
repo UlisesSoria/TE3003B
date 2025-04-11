@@ -1,0 +1,5 @@
+[console_scripts]
+dynamic_tf_publisher = challenge.dynamic_tf_publisher:main
+static_tf = tf_examples.static_tf:main
+tf_broadcaster = tf_examples.tf_broadcaster:main
+

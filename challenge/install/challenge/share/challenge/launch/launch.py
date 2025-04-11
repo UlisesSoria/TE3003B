@@ -8,7 +8,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     package_name = 'challenge'
     urdf_file_name = 'puzzlebot.urdf'
-    urdf_path =os.path.join(
+    urdf_path = os.path.join(
         get_package_share_directory('challenge'),
         'urdf',
         urdf_file_name)

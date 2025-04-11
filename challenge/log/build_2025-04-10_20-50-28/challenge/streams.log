@@ -1,0 +1,48 @@
+[0.717s] Invoking command in '/home/alexl/ros2_ws/src/challenge': PYTHONPATH=/home/alexl/ros2_ws/src/challenge/build/challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/challenge build --build-base /home/alexl/ros2_ws/src/challenge/build/challenge/build install --record /home/alexl/ros2_ws/src/challenge/build/challenge/install.log --single-version-externally-managed install_data
+[0.921s] running egg_info
+[0.921s] creating build/challenge/challenge.egg-info
+[0.921s] writing build/challenge/challenge.egg-info/PKG-INFO
+[0.922s] writing dependency_links to build/challenge/challenge.egg-info/dependency_links.txt
+[0.922s] writing entry points to build/challenge/challenge.egg-info/entry_points.txt
+[0.922s] writing requirements to build/challenge/challenge.egg-info/requires.txt
+[0.922s] writing top-level names to build/challenge/challenge.egg-info/top_level.txt
+[0.923s] writing manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+[0.923s] reading manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+[0.924s] writing manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+[0.924s] running build
+[0.924s] running build_py
+[0.924s] creating /home/alexl/ros2_ws/src/challenge/build/challenge/build
+[0.924s] creating /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib
+[0.924s] creating /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+[0.925s] copying challenge/__init__.py -> /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+[0.925s] copying challenge/dynamic_tf_publisher.py -> /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+[0.925s] running install
+[0.925s] running install_lib
+[0.926s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+[0.926s] copying /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge/__init__.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+[0.926s] copying /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge/dynamic_tf_publisher.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+[0.926s] byte-compiling /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge/__init__.py to __init__.cpython-310.pyc
+[0.926s] byte-compiling /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge/dynamic_tf_publisher.py to dynamic_tf_publisher.cpython-310.pyc
+[0.927s] running install_data
+[0.927s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index
+[0.927s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index
+[0.927s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index/packages
+[0.927s] copying resource/challenge -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index/packages
+[0.927s] copying package.xml -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge
+[0.927s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/launch
+[0.928s] copying launch/launch.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/launch
+[0.928s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/urdf
+[0.928s] copying urdf/puzzlebot.urdf -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/urdf
+[0.928s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+[0.928s] copying meshes/Puzzlebot_Wheel.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+[0.935s] copying meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+[0.936s] copying meshes/Puzzlebot_Caster_Wheel.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+[0.937s] creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/rviz
+[0.937s] running install_egg_info
+[0.939s] Copying build/challenge/challenge.egg-info to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge-0.0.0-py3.10.egg-info
+[0.940s] running install_scripts
+[0.957s] Installing dynamic_tf_publisher script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.957s] Installing static_tf script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.957s] Installing tf_broadcaster script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.957s] writing list of installed files to '/home/alexl/ros2_ws/src/challenge/build/challenge/install.log'
+[0.989s] Invoked command in '/home/alexl/ros2_ws/src/challenge' returned '0': PYTHONPATH=/home/alexl/ros2_ws/src/challenge/build/challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/challenge build --build-base /home/alexl/ros2_ws/src/challenge/build/challenge/build install --record /home/alexl/ros2_ws/src/challenge/build/challenge/install.log --single-version-externally-managed install_data

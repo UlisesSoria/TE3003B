@@ -1,0 +1,46 @@
+running egg_info
+creating build/challenge/challenge.egg-info
+writing build/challenge/challenge.egg-info/PKG-INFO
+writing dependency_links to build/challenge/challenge.egg-info/dependency_links.txt
+writing entry points to build/challenge/challenge.egg-info/entry_points.txt
+writing requirements to build/challenge/challenge.egg-info/requires.txt
+writing top-level names to build/challenge/challenge.egg-info/top_level.txt
+writing manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+reading manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+writing manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/alexl/ros2_ws/src/challenge/build/challenge/build
+creating /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib
+creating /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+copying challenge/__init__.py -> /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+copying challenge/dynamic_tf_publisher.py -> /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge
+running install
+running install_lib
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+copying /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge/__init__.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+copying /home/alexl/ros2_ws/src/challenge/build/challenge/build/lib/challenge/dynamic_tf_publisher.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge
+byte-compiling /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge/dynamic_tf_publisher.py to dynamic_tf_publisher.cpython-310.pyc
+running install_data
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index/packages
+copying resource/challenge -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/ament_index/resource_index/packages
+copying package.xml -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/launch
+copying launch/launch.py -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/launch
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/urdf
+copying urdf/puzzlebot.urdf -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/urdf
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+copying meshes/Puzzlebot_Wheel.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+copying meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+copying meshes/Puzzlebot_Caster_Wheel.stl -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/meshes
+creating /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/rviz
+running install_egg_info
+Copying build/challenge/challenge.egg-info to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge-0.0.0-py3.10.egg-info
+running install_scripts
+Installing dynamic_tf_publisher script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+Installing static_tf script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+Installing tf_broadcaster script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+writing list of installed files to '/home/alexl/ros2_ws/src/challenge/build/challenge/install.log'

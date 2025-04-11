@@ -1,0 +1,24 @@
+[0.587s] Invoking command in '/home/alexl/ros2_ws/src/challenge': PYTHONPATH=/home/alexl/ros2_ws/src/challenge/build/challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/challenge build --build-base /home/alexl/ros2_ws/src/challenge/build/challenge/build install --record /home/alexl/ros2_ws/src/challenge/build/challenge/install.log --single-version-externally-managed install_data
+[0.799s] running egg_info
+[0.799s] writing build/challenge/challenge.egg-info/PKG-INFO
+[0.799s] writing dependency_links to build/challenge/challenge.egg-info/dependency_links.txt
+[0.799s] writing entry points to build/challenge/challenge.egg-info/entry_points.txt
+[0.800s] writing requirements to build/challenge/challenge.egg-info/requires.txt
+[0.800s] writing top-level names to build/challenge/challenge.egg-info/top_level.txt
+[0.801s] reading manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+[0.802s] writing manifest file 'build/challenge/challenge.egg-info/SOURCES.txt'
+[0.802s] running build
+[0.802s] running build_py
+[0.802s] running install
+[0.803s] running install_lib
+[0.804s] running install_data
+[0.804s] copying urdf/puzzlebot.urdf -> /home/alexl/ros2_ws/src/challenge/install/challenge/share/challenge/urdf
+[0.804s] running install_egg_info
+[0.805s] removing '/home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge-0.0.0-py3.10.egg-info' (and everything under it)
+[0.806s] Copying build/challenge/challenge.egg-info to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages/challenge-0.0.0-py3.10.egg-info
+[0.807s] running install_scripts
+[0.824s] Installing dynamic_tf_publisher script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.824s] Installing static_tf script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.825s] Installing tf_broadcaster script to /home/alexl/ros2_ws/src/challenge/install/challenge/lib/challenge
+[0.825s] writing list of installed files to '/home/alexl/ros2_ws/src/challenge/build/challenge/install.log'
+[0.859s] Invoked command in '/home/alexl/ros2_ws/src/challenge' returned '0': PYTHONPATH=/home/alexl/ros2_ws/src/challenge/build/challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ros2_ws/src/challenge/install/challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/challenge build --build-base /home/alexl/ros2_ws/src/challenge/build/challenge/build install --record /home/alexl/ros2_ws/src/challenge/build/challenge/install.log --single-version-externally-managed install_data
