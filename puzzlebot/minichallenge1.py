@@ -2,7 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from tf2_ros import StaticTransformBroadcaster
-from geometry_msgs.msg import TransformStamped, Twist
+from geometry_msgs.msg import TransformStamped
 import transforms3d
 import numpy as np
 
@@ -15,14 +15,7 @@ class PuzzlebotTFBroadcaster(Node):
         self.tf_br3 = StaticTransformBroadcaster(self)
         self.tf_br4 = StaticTransformBroadcaster(self)
 
-        self.cmd_vel_subscriber = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10) 
-
-        self.r = 0.05 #puzzlebot wheel radius [m] 
-        self.L = 0.19 #puzzlebot wheel separation [m] 
-
-        self.v = 0.0
-        self.w = 0.0
-
+        
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = 'map'
@@ -48,17 +41,12 @@ class PuzzlebotTFBroadcaster(Node):
         self.timer = self.create_timer(timer_period, self.timer_cb)
         #Variables to be used
         self.start_time = self.get_clock().now()
+        self.omega = 1
         
         self.tf_br1.sendTransform(t)
 
-    def cmd_vel_callback(self, msg):
-        self.w = msg.angular.z 
-        self.v = msg.linear.x
-
     def timer_cb(self):
         
-        wr,wl = self.get_wheel_speeds()
-
         elapsed_time = (self.get_clock().now() - self.start_time).nanoseconds/1e9
 
         self.t2.header.stamp = self.get_clock().now().to_msg()
@@ -79,7 +67,7 @@ class PuzzlebotTFBroadcaster(Node):
         self.t3.transform.translation.x = 0.052
         self.t3.transform.translation.y = -0.095
         self.t3.transform.translation.z = -0.0025
-        q = transforms3d.euler.euler2quat(0, wl * elapsed_time, 0)      
+        q = transforms3d.euler.euler2quat(0, self.omega * elapsed_time, 0)      
         self.t3.transform.rotation.x = q[1]
         self.t3.transform.rotation.y = q[2]
         self.t3.transform.rotation.z = q[3]
@@ -91,7 +79,7 @@ class PuzzlebotTFBroadcaster(Node):
         self.t4.transform.translation.x = 0.052
         self.t4.transform.translation.y = 0.095
         self.t4.transform.translation.z = -0.0025
-        q = transforms3d.euler.euler2quat(0, wr * elapsed_time, 0)
+        q = transforms3d.euler.euler2quat(0, self.omega * elapsed_time, 0)
         self.t4.transform.rotation.x = q[1]
         self.t4.transform.rotation.y = q[2]
         self.t4.transform.rotation.z = q[3]
@@ -101,26 +89,6 @@ class PuzzlebotTFBroadcaster(Node):
         self.tf_br2.sendTransform(self.t2)
         self.tf_br3.sendTransform(self.t3)
         self.tf_br4.sendTransform(self.t4)
-
-    def get_wheel_speeds(self): 
-
-        # Calculate the wheel speeds based on the linear and angular velocities 
-
-        wr = 0.0 
-
-        wl = 0.0 
-
-        wr = (2*self.v + self.w*self.L)/(2*self.r)
-
-        wl = (2*self.v - self.w*self.L)/(2*self.r)
-
-        if (wr == 0 and wl == 0):
-            
-            wr = self.v + (self.w*self.L)/2
-            
-            wl = self.v - (self.w*self.L)/2
-
-        return wr, wl 
 
 def main(args=None):
     rclpy.init(args=args)
