@@ -32,11 +32,26 @@ def generate_launch_description():
                                         {'use_sim_time': LaunchConfiguration('use_sim_time')},
                                         {'robot_description': robot_desc}],
                             arguments=[urdf_path])
+    
+    localisation_node = Node(
+        package='puzzlebot',
+        executable='localisation',
+        name='localisation',
+        output='screen'
+    )
+    kinematic_model_node = Node(
+        package='puzzlebot',
+        executable='puzzlebot_kinematic_model',
+        name='puzzlebot_kinematic_model',
+        output='screen'
+    )
 
-    joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui'
+
+    joint_state_publisher = Node(
+        package='puzzlebot',
+        executable='joint_state_pub',
+        name='joint_state_pub',
+        output='screen'
     )
 
     dynamic_tf_node = Node(
@@ -64,10 +79,11 @@ def generate_launch_description():
     return LaunchDescription([
         use_sim_time,
         robot_state_publisher,
-        joint_state_publisher_gui,
+        localisation_node,
+        kinematic_model_node,
+        joint_state_publisher,
         dynamic_tf_node,
         rqt_tf_tree,
         rviz,
 
-        
     ])

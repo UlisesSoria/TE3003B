@@ -14,22 +14,22 @@ class JointTFPublisherFromOdom(Node):
         self.subscription = self.create_subscription(Odometry, 'odom', self.odom_callback, 10)
 
     def odom_callback(self, msg):
-        # Extraer posición
+        # Extract position
         x = msg.pose.pose.position.x
         y = msg.pose.pose.position.y
         z = msg.pose.pose.position.z
 
-        # Extraer orientación (cuaternión)
+        # Extract orientation
         q = msg.pose.pose.orientation
 
-        # Crear y publicar la transformación TF de odom → base_link
+        # Create & publish the transform from odom to base_link
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'odom'
+        t.header.frame_id = 'base_footprint'
         t.child_frame_id = 'base_link'
         t.transform.translation.x = x
         t.transform.translation.y = y
-        t.transform.translation.z = z
+        t.transform.translation.z = z  # Adjust z position if needed
         t.transform.rotation = q
 
         self.tf_broadcaster.sendTransform(t)
