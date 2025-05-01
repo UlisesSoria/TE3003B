@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+
+  <plugin name="gazebo_ros_init" filename="libgazebo_ros_init.so">
+    <ros>
+      <namespace>/</namespace>
+    </ros>
+  </plugin>
+  <plugin name="gazebo_ros_factory" filename="libgazebo_ros_factory.so"/>
+
+
+    <include>
+      <uri>model://modulo3_world</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+  </world>
+</sdf>

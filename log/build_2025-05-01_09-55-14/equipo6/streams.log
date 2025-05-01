@@ -1,0 +1,21 @@
+[1.263s] Invoking command in '/home/ulisess/TE3003B/equipo6': PYTHONPATH=/home/ulisess/TE3003B/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/build/equipo6/build install --record /home/ulisess/TE3003B/build/equipo6/install.log --single-version-externally-managed install_data
+[1.746s] running egg_info
+[1.747s] writing ../build/equipo6/equipo6.egg-info/PKG-INFO
+[1.748s] writing dependency_links to ../build/equipo6/equipo6.egg-info/dependency_links.txt
+[1.748s] writing entry points to ../build/equipo6/equipo6.egg-info/entry_points.txt
+[1.748s] writing requirements to ../build/equipo6/equipo6.egg-info/requires.txt
+[1.749s] writing top-level names to ../build/equipo6/equipo6.egg-info/top_level.txt
+[1.753s] reading manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[1.755s] writing manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[1.755s] running build
+[1.755s] running build_py
+[1.756s] running install
+[1.757s] running install_lib
+[1.759s] running install_data
+[1.760s] copying worlds/act3_4.world -> /home/ulisess/TE3003B/install/equipo6/share/equipo6/worlds
+[1.761s] running install_egg_info
+[1.764s] removing '/home/ulisess/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info' (and everything under it)
+[1.764s] Copying ../build/equipo6/equipo6.egg-info to /home/ulisess/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info
+[1.766s] running install_scripts
+[1.802s] writing list of installed files to '/home/ulisess/TE3003B/build/equipo6/install.log'
+[1.855s] Invoked command in '/home/ulisess/TE3003B/equipo6' returned '0': PYTHONPATH=/home/ulisess/TE3003B/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/build/equipo6/build install --record /home/ulisess/TE3003B/build/equipo6/install.log --single-version-externally-managed install_data
