@@ -1,4 +1,5 @@
 import rclpy
+import ast
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
@@ -10,12 +11,15 @@ class Controller(Node):
         super().__init__('controller')
 
         # List of goal positions (x, y) without orientation
-        self.goals = [
-            (1.0, 0.0),
-            (1.0, 1.0),
-            (0.0, 1.0),
-            (0.0, 0.0)
-        ]
+        self.declare_parameter('goals', '[[1.0, 0.0], [1.0, 1.0], [0.0, 1.0], [0.0, 0.0]]')
+        
+        goals_str = self.get_parameter('goals').value
+        
+        try:
+            self.goals = ast.literal_eval(goals_str)
+        except Exception as e:
+            self.get_logger().error(f"Error parsing 'goals': {e}")
+            self.goals = []
         self.current_goal_index = 0
 
         # Control gains

@@ -15,6 +15,14 @@ class PuzzlebotTFBroadcaster(Node):
         self.tf_br3 = StaticTransformBroadcaster(self)
         self.tf_br4 = StaticTransformBroadcaster(self)
 
+        self.declare_parameter('x', 1.0)
+        self.declare_parameter('y', 0.0)
+        self.declare_parameter('z', 0.0)
+
+        self.x = self.get_parameter('x').value
+        self.y = self.get_parameter('y').value
+        self.z = self.get_parameter('z').value
+
         self.cmd_vel_subscriber = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10) 
 
         self.r = 0.05 #puzzlebot wheel radius [m] 
@@ -64,9 +72,9 @@ class PuzzlebotTFBroadcaster(Node):
         self.t2.header.stamp = self.get_clock().now().to_msg()
         self.t2.header.frame_id = 'odom'
         self.t2.child_frame_id = 'base_footprint'
-        self.t2.transform.translation.x = 1.0
-        self.t2.transform.translation.y = 0.0
-        self.t2.transform.translation.z = 0.0
+        self.t2.transform.translation.x = self.x
+        self.t2.transform.translation.y = self.y
+        self.t2.transform.translation.z = self.z
         q = transforms3d.euler.euler2quat(0, 0, 0)       
         self.t2.transform.rotation.x = q[1]
         self.t2.transform.rotation.y = q[2]
