@@ -34,7 +34,7 @@ def generate_launch_description():
     world = os.path.join(
         get_package_share_directory('equipo6'),
         'worlds',
-        'act3_4.world'
+        'act3_4V2.world'
     )
 
     gzserver_cmd = IncludeLaunchDescription(
