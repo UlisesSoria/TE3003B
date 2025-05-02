@@ -7,6 +7,10 @@
     </include>
 
     <include>
+      <uri>model://puzzlebot</uri>
+    </include>
+
+    <include>
       <uri>model://ground_plane</uri>
     </include>
 
