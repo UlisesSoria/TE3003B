@@ -37,6 +37,7 @@ def generate_launch_description():
                             output='screen',
                             parameters=[
                                         {'use_sim_time': LaunchConfiguration('use_sim_time')},
+                                        {'frame_prefix': 'robot1/'},
                                         {'robot_description': robot_desc}],
                             arguments=[urdf_path],
                             namespace='robot1')
@@ -63,15 +64,6 @@ def generate_launch_description():
         package='puzzlebot',
         executable='joint_state_pub',
         name='joint_state_pub',
-        emulate_tty=True,
-        output='screen',
-        namespace='robot1'
-    )
-
-    dynamic_tf_node = Node(
-        package='puzzlebot',
-        executable='minichallenge1',
-        name='minichallenge1',
         parameters=[{'x': 1.0, 'y': 0.0, 'z': 0.0}],
         emulate_tty=True,
         output='screen',
@@ -102,6 +94,7 @@ def generate_launch_description():
                             namespace='robot2',
                             parameters=[
                                         {'use_sim_time': LaunchConfiguration('use_sim_time')},
+                                        {'frame_prefix': 'robot2/'},
                                         {'robot_description': robot_desc}],
                             arguments=[urdf_path2])
     
@@ -127,15 +120,6 @@ def generate_launch_description():
         package='puzzlebot',
         executable='joint_state_pub',
         name='joint_state_pub',
-        emulate_tty=True,
-        output='screen',
-        namespace='robot2'
-    )
-
-    dynamic_tf_node2 = Node(
-        package='puzzlebot',
-        executable='minichallenge1',
-        name='minichallenge1',
         parameters=[{'x': 2.0, 'y': 0.0, 'z': 0.0}],
         emulate_tty=True,
         output='screen',
@@ -149,12 +133,10 @@ def generate_launch_description():
         localisation_node,
         kinematic_model_node,
         joint_state_publisher,
-        dynamic_tf_node,
         robot_state_publisher2,
         localisation_node2,
         kinematic_model_node2,
         joint_state_publisher2,
-        dynamic_tf_node2,
         rviz,
         rqt_graph,
 
