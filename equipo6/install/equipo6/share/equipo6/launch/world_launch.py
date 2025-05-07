@@ -25,9 +25,9 @@ def generate_launch_description():
     rviz_file = 'puzzlebot_markers.rviz'
 
     # Robot's initial position
-    pos_x = '0.0'   # X coordinate
-    pos_y = '0.0'   # Y coordinate
-    pos_th = '0.0'   # th angle
+    pos_x = '0.15'   # X coordinate
+    pos_y = '0.25'   # Y coordinate
+    pos_th = '180.0'   # th angle
 
     # Simulation time and pause settings
     sim_time = 'true'  # Set to 'true' for sim time
@@ -161,7 +161,7 @@ def generate_launch_description():
             executable='rviz2',
             name='rviz2',
             output='screen',
-            arguments=['-d', '/home/alexl/ActM3.5/TE3003B/equipo6/rviz/puzzlebot_markers.rviz'],
+            arguments=['-d', 'rviz/' + rviz_file],
             parameters=[{
                 'use_sim_time': use_sim_time,
             }],
