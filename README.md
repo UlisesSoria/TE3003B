@@ -16,5 +16,5 @@ sudo apt-get install gz-garden
 
 Finally install the ros_gz package
 ```
-apt-get install ros-humble-ros-gzgarden
+sudo apt-get install ros-humble-ros-gzgarden
 ```
