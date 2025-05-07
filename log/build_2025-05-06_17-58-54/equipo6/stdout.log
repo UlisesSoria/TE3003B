@@ -1,0 +1,55 @@
+running egg_info
+creating ../build/equipo6/equipo6.egg-info
+writing ../build/equipo6/equipo6.egg-info/PKG-INFO
+writing dependency_links to ../build/equipo6/equipo6.egg-info/dependency_links.txt
+writing entry points to ../build/equipo6/equipo6.egg-info/entry_points.txt
+writing requirements to ../build/equipo6/equipo6.egg-info/requires.txt
+writing top-level names to ../build/equipo6/equipo6.egg-info/top_level.txt
+writing manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+reading manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+writing manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/build
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/build/lib
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/build/lib/equipo6
+copying equipo6/__init__.py -> /home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/build/lib/equipo6
+running install
+running install_lib
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6
+copying /home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/build/lib/equipo6/__init__.py -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6
+byte-compiling /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/ament_index
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/ament_index/resource_index
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/ament_index/resource_index/packages
+copying resource/equipo6 -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/ament_index/resource_index/packages
+copying package.xml -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/launch
+copying launch/robot_state_pub_launch.py -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/launch
+copying launch/spawn_puzzlebot_launch.py -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/launch
+copying launch/world_launch.py -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/launch
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/config
+copying config/puzzlebot_hacker_ed.yaml -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/config
+copying config/puzzlebot_jetson_lidar_ed.yaml -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/config
+copying config/puzzlebot_jetson_ed.yaml -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/config
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/rviz
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base
+copying models/puzzlebot_base/model.sdf -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base
+copying models/puzzlebot_base/model.config -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base/materials
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base/materials/textures
+copying models/puzzlebot_base/materials/textures/puzzlebot_wood_6.png -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base/materials/textures
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/modulo3_world
+copying models/modulo3_world/model.sdf -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/modulo3_world
+copying models/modulo3_world/model.config -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/modulo3_world
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot
+copying models/puzzlebot/puzzlebot.config -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot
+copying models/puzzlebot/puzzlebot.sdf -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot
+creating /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/worlds
+copying worlds/act3_4.world -> /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/share/equipo6/worlds
+running install_egg_info
+Copying ../build/equipo6/equipo6.egg-info to /home/ulisess/TE3003B/modulo 3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ulisess/TE3003B/modulo 3/Act3.5/build/equipo6/install.log'
