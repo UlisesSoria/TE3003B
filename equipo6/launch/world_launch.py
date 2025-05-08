@@ -23,6 +23,7 @@ def generate_launch_description():
     world_file = 'act3_4.world'
     robot = 'puzzlebot_jetson_lidar_ed'
     rviz_file = 'puzzlebot_markers.rviz'
+    rviz_config_file = os.path.join(get_package_share_directory('equipo6'), 'rviz', rviz_file)
 
     # Robot's initial position
     pos_x = '0.0'   # X coordinate
@@ -161,7 +162,7 @@ def generate_launch_description():
             executable='rviz2',
             name='rviz2',
             output='screen',
-            arguments=['-d', '/home/alexl/ActM3.5/TE3003B/equipo6/rviz/puzzlebot_markers.rviz'],
+            arguments=['-d', rviz_config_file],
             parameters=[{
                 'use_sim_time': use_sim_time,
             }],
