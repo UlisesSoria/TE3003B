@@ -1,0 +1,65 @@
+[0.671s] Invoking command in '/home/alexl/ActM3.5/TE3003B/equipo6': PYTHONPATH=/home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/equipo6 build --build-base /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build install --record /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/install.log --single-version-externally-managed install_data
+[0.881s] running egg_info
+[0.882s] creating build/equipo6/equipo6.egg-info
+[0.882s] writing build/equipo6/equipo6.egg-info/PKG-INFO
+[0.882s] writing dependency_links to build/equipo6/equipo6.egg-info/dependency_links.txt
+[0.882s] writing entry points to build/equipo6/equipo6.egg-info/entry_points.txt
+[0.882s] writing requirements to build/equipo6/equipo6.egg-info/requires.txt
+[0.883s] writing top-level names to build/equipo6/equipo6.egg-info/top_level.txt
+[0.883s] writing manifest file 'build/equipo6/equipo6.egg-info/SOURCES.txt'
+[0.884s] reading manifest file 'build/equipo6/equipo6.egg-info/SOURCES.txt'
+[0.885s] writing manifest file 'build/equipo6/equipo6.egg-info/SOURCES.txt'
+[0.885s] running build
+[0.885s] running build_py
+[0.885s] creating /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build
+[0.885s] creating /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build/lib
+[0.885s] creating /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build/lib/equipo6
+[0.885s] copying equipo6/__init__.py -> /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build/lib/equipo6
+[0.885s] running install
+[0.886s] running install_lib
+[0.886s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages/equipo6
+[0.887s] copying /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build/lib/equipo6/__init__.py -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages/equipo6
+[0.887s] byte-compiling /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages/equipo6/__init__.py to __init__.cpython-310.pyc
+[0.887s] running install_data
+[0.887s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/ament_index
+[0.887s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/ament_index/resource_index
+[0.887s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/ament_index/resource_index/packages
+[0.887s] copying resource/equipo6 -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/ament_index/resource_index/packages
+[0.888s] copying package.xml -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6
+[0.888s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/launch
+[0.888s] copying launch/robot_state_pub_launch.py -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/launch
+[0.888s] copying launch/world_launch.py -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/launch
+[0.888s] copying launch/spawn_puzzlebot_launch.py -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/launch
+[0.888s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/config
+[0.888s] copying config/puzzlebot_jetson_ed.yaml -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/config
+[0.895s] copying config/puzzlebot_hacker_ed.yaml -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/config
+[0.896s] copying config/puzzlebot_jetson_lidar_ed.yaml -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/config
+[0.896s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/rviz
+[0.896s] copying rviz/puzzlebot_rviz.rviz -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/rviz
+[0.896s] copying rviz/multi_puzzlebot_rviz.rviz -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/rviz
+[0.896s] copying rviz/simple_puzzlebot_rviz.rviz -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/rviz
+[0.896s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models
+[0.896s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base
+[0.896s] copying models/puzzlebot_base/model.sdf -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base
+[0.897s] copying models/puzzlebot_base/model.config -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base
+[0.897s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base/materials
+[0.897s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base/materials/textures
+[0.897s] copying models/puzzlebot_base/materials/textures/puzzlebot_wood_6.png -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot_base/materials/textures
+[0.899s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/simple_light
+[0.899s] copying models/simple_light/model.sdf -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/simple_light
+[0.899s] copying models/simple_light/model.config -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/simple_light
+[0.899s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/modulo3_world
+[0.899s] copying models/modulo3_world/model.sdf -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/modulo3_world
+[0.899s] copying models/modulo3_world/model.config -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/modulo3_world
+[0.899s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot
+[0.899s] copying models/puzzlebot/puzzlebot.sdf -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot
+[0.900s] copying models/puzzlebot/puzzlebot.config -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/models/puzzlebot
+[0.900s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/worlds
+[0.900s] copying worlds/act3_4.world -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/worlds
+[0.900s] creating /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/plugins
+[0.900s] copying plugins/libDiffDynamicPlugin.so -> /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/share/equipo6/plugins
+[0.904s] running install_egg_info
+[0.906s] Copying build/equipo6/equipo6.egg-info to /home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info
+[0.906s] running install_scripts
+[0.924s] writing list of installed files to '/home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/install.log'
+[0.955s] Invoked command in '/home/alexl/ActM3.5/TE3003B/equipo6' returned '0': PYTHONPATH=/home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/ActM3.5/TE3003B/equipo6/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/equipo6 build --build-base /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/build install --record /home/alexl/ActM3.5/TE3003B/equipo6/build/equipo6/install.log --single-version-externally-managed install_data

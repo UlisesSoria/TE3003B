@@ -23,12 +23,11 @@ def generate_launch_description():
     world_file = 'act3_4.world'
     robot = 'puzzlebot_jetson_lidar_ed'
     rviz_file = 'puzzlebot_markers.rviz'
-    rviz_config_file = os.path.join(get_package_share_directory('equipo6'), 'rviz', rviz_file)
 
     # Robot's initial position
-    pos_x = '0.0'   # X coordinate
-    pos_y = '0.0'   # Y coordinate
-    pos_th = '0.0'   # th angle
+    pos_x = '0.15'   # X coordinate
+    pos_y = '0.25'   # Y coordinate
+    pos_th = '180.0'   # th angle
 
     # Simulation time and pause settings
     sim_time = 'true'  # Set to 'true' for sim time
@@ -162,7 +161,7 @@ def generate_launch_description():
             executable='rviz2',
             name='rviz2',
             output='screen',
-            arguments=['-d', rviz_config_file],
+            arguments=['-d', 'rviz/' + rviz_file],
             parameters=[{
                 'use_sim_time': use_sim_time,
             }],
