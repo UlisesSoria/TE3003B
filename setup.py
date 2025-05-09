@@ -31,6 +31,7 @@ setup(
             'puzzlebot_kinematic_model = puzzlebot.puzzlebot_kinematic_model:main',
             'joint_state_pub = puzzlebot.joint_state_pub:main',
             'localisation = puzzlebot.localisation:main',
+            'localisationv2 = puzzlebot.localisationv2:main',
             'point_stabilisation_control = puzzlebot.point_stabilisation_control:main',
             'move_forward = puzzlebot.move_forward:main',
             'controller = puzzlebot.controller:main',
