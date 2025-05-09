@@ -77,8 +77,10 @@ class KinematicModelNode(Node):
         # Get the linear and angular velocities from the message 
 
         self.v = msg.linear.x 
+        self.get_logger().info('v: %f' % self.v)
 
         self.w = msg.angular.z 
+        self.get_logger().info('v: %f' % self.v)
  
 
     def get_wheel_speeds(self): 
@@ -92,9 +94,6 @@ class KinematicModelNode(Node):
         wr = (2*self.v + self.w*self.L)/(2*self.r)
 
         wl = (2*self.v - self.w*self.L)/(2*self.r)
-
-        self.get_logger().info('wr: %f' % wr)
-        self.get_logger().info('wl: %f' % wl)
 
         return wr, wl 
 

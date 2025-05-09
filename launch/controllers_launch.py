@@ -9,9 +9,7 @@ def generate_launch_description():
         executable='controller',
         name='controller',
         output='screen',
-        emulate_tty=True,
-        parameters=[{'goals': "[[0.0, 1.0], [1.0, 1.0], [-1.0, 0.0], [0.0, 0.0]]"}],
-        namespace='robot1'
+        parameters=[{'goals': "[[0.0, 1.0], [1.0, 1.0], [-1.0, 0.0], [0.0, 0.0]]"}]
     )
 
     controller_node2 = Node(
@@ -26,5 +24,4 @@ def generate_launch_description():
 
     return LaunchDescription([
         controller_node,
-        controller_node2,
     ])

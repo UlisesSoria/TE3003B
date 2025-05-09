@@ -80,7 +80,7 @@ class PuzzlebotTFBroadcaster(Node):
 
         self.t2.header.stamp = self.get_clock().now().to_msg()
         self.t2.header.frame_id = self.odom_frame
-        self.t2.child_frame_id = f'{self.namespace}/base_footprint'
+        self.t2.child_frame_id = 'base_footprint'
         self.t2.transform.translation.x = self.x
         self.t2.transform.translation.y = self.y
         self.t2.transform.translation.z = self.z
@@ -91,8 +91,8 @@ class PuzzlebotTFBroadcaster(Node):
         self.t2.transform.rotation.w = q[0]
 
         self.t3.header.stamp = self.get_clock().now().to_msg()
-        self.t3.header.frame_id = f'{self.namespace}/base_link'
-        self.t3.child_frame_id = f'{self.namespace}/wheel_l'
+        self.t3.header.frame_id = 'base_link'
+        self.t3.child_frame_id = 'wheel_l'
         self.t3.transform.translation.x = 0.052
         self.t3.transform.translation.y = -0.095
         self.t3.transform.translation.z = -0.0025
@@ -103,8 +103,8 @@ class PuzzlebotTFBroadcaster(Node):
         self.t3.transform.rotation.w = q[0]
 
         self.t4.header.stamp = self.get_clock().now().to_msg()
-        self.t4.header.frame_id = f'{self.namespace}/base_link'
-        self.t4.child_frame_id = f'{self.namespace}/wheel_r'
+        self.t4.header.frame_id = 'base_link'
+        self.t4.child_frame_id = 'wheel_r'
         self.t4.transform.translation.x = 0.052
         self.t4.transform.translation.y = 0.095
         self.t4.transform.translation.z = -0.0025
@@ -131,8 +131,8 @@ class PuzzlebotTFBroadcaster(Node):
         # Create & publish the transform from odom to base_link
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = f'{self.namespace}/base_footprint'
-        t.child_frame_id = f'{self.namespace}/base_link'
+        t.header.frame_id = 'base_footprint'
+        t.child_frame_id = 'base_link'
         t.transform.translation.x = x
         t.transform.translation.y = y
         t.transform.translation.z = z  # Adjust z position if needed

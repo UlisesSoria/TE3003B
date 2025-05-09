@@ -8,18 +8,13 @@ from launch_ros.actions import Node
 def generate_launch_description():
     package_name = 'puzzlebot'
     urdf_file_name = 'puzzlebot.urdf'
-    urdf_file_name2 = 'puzzlebot2.urdf'
     urdf_path =os.path.join(
         get_package_share_directory('puzzlebot'),
         'urdf',
         urdf_file_name)
-    urdf_path2 =os.path.join(
-        get_package_share_directory('puzzlebot'),
-        'urdf',
-        urdf_file_name2)
     
     #urdf_file_path = os.path.join(get_package_share_directory(package_name), 'urdf', 'puzzlebot.urdf')
-    rviz_config_file = os.path.join(get_package_share_directory(package_name), 'rviz', 'puzzlebot.rviz')
+    rviz_config_file = os.path.join(get_package_share_directory(package_name), 'rviz', 'odometry_puzzlebot_rviz.rviz')
 
 
     with open(urdf_path, 'r') as urdf_file:
@@ -33,30 +28,24 @@ def generate_launch_description():
                             package='robot_state_publisher',
                             executable='robot_state_publisher',
                             name='robot_state_publisher',
-                            emulate_tty=True,
                             output='screen',
                             parameters=[
                                         {'use_sim_time': LaunchConfiguration('use_sim_time')},
-                                        {'frame_prefix': 'robot1/'},
                                         {'robot_description': robot_desc}],
                             arguments=[urdf_path],
-                            namespace='robot1')
+                            )
     
     localisation_node = Node(
         package='puzzlebot',
         executable='localisation',
         name='localisation',
-        emulate_tty=True,
         output='screen',
-        namespace='robot1'
     )
     kinematic_model_node = Node(
         package='puzzlebot',
         executable='puzzlebot_kinematic_model',
         name='puzzlebot_kinematic_model',
-        emulate_tty=True,
         output='screen',
-        namespace='robot1'
     )
 
 
@@ -65,9 +54,7 @@ def generate_launch_description():
         executable='joint_state_pub',
         name='joint_state_pub',
         parameters=[{'x': 1.0, 'y': 0.0, 'z': 0.0}],
-        emulate_tty=True,
-        output='screen',
-        namespace='robot1'
+        output='screen'
     )
 
     rviz = Node(
@@ -85,47 +72,12 @@ def generate_launch_description():
         output='screen'
     )
 
-    robot_state_publisher2 = Node(
-                            package='robot_state_publisher',
-                            executable='robot_state_publisher',
-                            name='robot_state_publisher',
-                            emulate_tty=True,
-                            output='screen',
-                            namespace='robot2',
-                            parameters=[
-                                        {'use_sim_time': LaunchConfiguration('use_sim_time')},
-                                        {'frame_prefix': 'robot2/'},
-                                        {'robot_description': robot_desc}],
-                            arguments=[urdf_path2])
-    
-    localisation_node2 = Node(
-        package='puzzlebot',
-        executable='localisation',
-        name='localisation',
-        emulate_tty=True,
-        output='screen',
-        namespace='robot2'
+    rqt_tf_tree = Node(
+        package='rqt_tf_tree',
+        executable='rqt_tf_tree',
+        name='rqt_tf_tree',
+        output='screen'
     )
-    kinematic_model_node2 = Node(
-        package='puzzlebot',
-        executable='puzzlebot_kinematic_model',
-        name='puzzlebot_kinematic_model',
-        emulate_tty=True,
-        output='screen',
-        namespace='robot2'
-    )
-
-
-    joint_state_publisher2 = Node(
-        package='puzzlebot',
-        executable='joint_state_pub',
-        name='joint_state_pub',
-        parameters=[{'x': 2.0, 'y': 0.0, 'z': 0.0}],
-        emulate_tty=True,
-        output='screen',
-        namespace='robot2'
-    )
-
 
     return LaunchDescription([
         use_sim_time,
@@ -133,11 +85,8 @@ def generate_launch_description():
         localisation_node,
         kinematic_model_node,
         joint_state_publisher,
-        robot_state_publisher2,
-        localisation_node2,
-        kinematic_model_node2,
-        joint_state_publisher2,
-        rviz,
+        rqt_tf_tree,
         rqt_graph,
-
+        rviz
+        
     ])

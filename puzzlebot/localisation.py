@@ -51,7 +51,12 @@ class Localisation(Node):
 
         self.wr = 0.0 # right wheel speed [rad/s] 
 
-        self.wl = 0.0 # left wheel speed [rad/s] 
+        self.wl = 0.0 # left wheel speed [rad/s]
+
+        # Covariance parameters (NEW)
+        self.P = np.diag([0.1, 0.1, 0.1])  # 3x3 covariance matrix
+        self.sigma_v = 0.3   # Linear velocity noise (adjust)
+        self.sigma_w = 0.2  # Angular velocity noise (adjust) 
 
         self.prev_time_ns = self.get_clock().now().nanoseconds # Previous time in nanoseconds
 
@@ -77,6 +82,8 @@ class Localisation(Node):
         v, w = self.get_robot_vel(self.wr, self.wl) 
 
         self.update_pose(v, w) 
+
+        self.update_covariance(v, w, (self.get_clock().now().nanoseconds - self.prev_time_ns)*10**-9)
 
         # Fill the odom message with the robot's pose 
 
@@ -137,6 +144,28 @@ class Localisation(Node):
 
         self.prev_time_ns = self.get_clock().now().nanoseconds  
 
+    
+    def update_covariance(self, v, w,dt):
+        # State transition matrix (Jacobian of the motion model w.r.t. state)
+        Mx = np.array([
+            [1, 0, -v * dt * np.sin(self.theta)],  # Partial derivatives of x, y, theta
+            [0, 1, v * dt * np.cos(self.theta)],
+            [0, 0, 1]
+        ])
+        
+        # Control input matrix (Jacobian of the motion model w.r.t. control inputs)
+        Mu = np.array([
+            [dt * np.cos(self.theta), -0.5 * v * dt**2 * np.sin(self.theta)],  # Partial derivatives of x, y, theta
+            [dt * np.sin(self.theta), 0.5 * v * dt**2 * np.cos(self.theta)],
+            [0, dt]
+        ])
+        
+        # Noise covariance matrix for control inputs
+        Q = np.diag([self.sigma_v**2, self.sigma_w**2])  # Variances of linear and angular velocity noise
+
+        # Update the covariance matrix using the motion model
+        self.P = Mx @ self.P @ Mx.T + Mu @ Q @ Mu.T
+
      
 
     def fill_odom_message(self, x, y, yaw): 
@@ -172,6 +201,18 @@ class Localisation(Node):
         odom_msg.pose.pose.orientation.z = quat[3] 
 
         odom_msg.pose.pose.orientation.w = quat[0] 
+
+        # Covariance matrix (NEW SECTION)
+        odom_msg.pose.covariance = [0.0]*36
+        odom_msg.pose.covariance[0] = self.P[0,0]  # var x
+        odom_msg.pose.covariance[7] = self.P[1,1]   # var y
+        odom_msg.pose.covariance[35] = self.P[2,2]  # var theta
+        odom_msg.pose.covariance[1] = self.P[0,1]   # cov xy
+        odom_msg.pose.covariance[6] = self.P[1,0]   # cov yx
+        odom_msg.pose.covariance[5] = self.P[0,2]   # cov xθ
+        odom_msg.pose.covariance[30] = self.P[2,0]  # cov θx
+        odom_msg.pose.covariance[11] = self.P[1,2]  # cov yθ
+        odom_msg.pose.covariance[31] = self.P[2,1]  # cov θy
 
         return odom_msg 
 
