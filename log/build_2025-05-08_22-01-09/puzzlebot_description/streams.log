@@ -1,0 +1,22 @@
+[1.730s] Invoking command in '/home/ulisess/TE3003B/modulo_3/Act3.5/puzzlebot_description': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log --single-version-externally-managed install_data
+[2.195s] running egg_info
+[2.196s] writing ../build/puzzlebot_description/puzzlebot_description.egg-info/PKG-INFO
+[2.197s] writing dependency_links to ../build/puzzlebot_description/puzzlebot_description.egg-info/dependency_links.txt
+[2.197s] writing entry points to ../build/puzzlebot_description/puzzlebot_description.egg-info/entry_points.txt
+[2.198s] writing requirements to ../build/puzzlebot_description/puzzlebot_description.egg-info/requires.txt
+[2.198s] writing top-level names to ../build/puzzlebot_description/puzzlebot_description.egg-info/top_level.txt
+[2.202s] reading manifest file '../build/puzzlebot_description/puzzlebot_description.egg-info/SOURCES.txt'
+[2.202s] adding license file 'LICENSE'
+[2.204s] writing manifest file '../build/puzzlebot_description/puzzlebot_description.egg-info/SOURCES.txt'
+[2.204s] running build
+[2.204s] running build_py
+[2.205s] running install
+[2.205s] running install_lib
+[2.208s] running install_data
+[2.210s] running install_egg_info
+[2.213s] removing '/home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[2.214s] Copying ../build/puzzlebot_description/puzzlebot_description.egg-info to /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description-0.0.0-py3.10.egg-info
+[2.216s] running install_scripts
+[2.257s] Installing joint_state_publisher script to /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/puzzlebot_description
+[2.257s] writing list of installed files to '/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log'
+[2.313s] Invoked command in '/home/ulisess/TE3003B/modulo_3/Act3.5/puzzlebot_description' returned '0': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log --single-version-externally-managed install_data

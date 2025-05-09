@@ -8,7 +8,11 @@
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/config/puzzlebot_hacker_ed.yaml
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/config/puzzlebot_jetson_lidar_ed.yaml
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/config/puzzlebot_jetson_ed.yaml
-/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz
+/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz/puzzlebot_rviz.rviz
+/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz/puzzlebot_markers.rviz
+/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz/rviz.rviz
+/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz/simple_puzzlebot_rviz.rviz
+/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/rviz/multi_puzzlebot_rviz.rviz
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/models/simple_light/model.sdf
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/models/simple_light/model.config
 /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/models/puzzlebot_base/model.sdf

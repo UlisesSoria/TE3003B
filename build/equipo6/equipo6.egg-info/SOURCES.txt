@@ -26,6 +26,11 @@ models/simple_light/model.config
 models/simple_light/model.sdf
 plugins/libDiffDynamicPlugin.so
 resource/equipo6
+rviz/multi_puzzlebot_rviz.rviz
+rviz/puzzlebot_markers.rviz
+rviz/puzzlebot_rviz.rviz
+rviz/rviz.rviz
+rviz/simple_puzzlebot_rviz.rviz
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

@@ -1,0 +1,25 @@
+[1.706s] Invoking command in '/home/ulisess/TE3003B/modulo_3/Act3.5/equipo6': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/install.log --single-version-externally-managed install_data
+[2.149s] running egg_info
+[2.150s] writing ../build/equipo6/equipo6.egg-info/PKG-INFO
+[2.151s] writing dependency_links to ../build/equipo6/equipo6.egg-info/dependency_links.txt
+[2.151s] writing entry points to ../build/equipo6/equipo6.egg-info/entry_points.txt
+[2.152s] writing requirements to ../build/equipo6/equipo6.egg-info/requires.txt
+[2.152s] writing top-level names to ../build/equipo6/equipo6.egg-info/top_level.txt
+[2.155s] reading manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[2.157s] writing manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[2.158s] running build
+[2.158s] running build_py
+[2.158s] copying equipo6/joint_state_pub.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/build/lib/equipo6
+[2.158s] running install
+[2.159s] running install_lib
+[2.160s] copying /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/build/lib/equipo6/joint_state_pub.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6
+[2.161s] byte-compiling /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6/joint_state_pub.py to joint_state_pub.cpython-310.pyc
+[2.162s] running install_data
+[2.163s] copying launch/world_launch.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/share/equipo6/launch
+[2.164s] running install_egg_info
+[2.167s] removing '/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info' (and everything under it)
+[2.167s] Copying ../build/equipo6/equipo6.egg-info to /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info
+[2.169s] running install_scripts
+[2.203s] Installing joint_state_pub script to /home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/equipo6
+[2.204s] writing list of installed files to '/home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/install.log'
+[2.266s] Invoked command in '/home/ulisess/TE3003B/modulo_3/Act3.5/equipo6' returned '0': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/equipo6/install.log --single-version-externally-managed install_data

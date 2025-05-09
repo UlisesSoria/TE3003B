@@ -22,10 +22,12 @@ def generate_launch_description():
     # World and robot file names
     world_file = 'act3_4.world'
     robot = 'puzzlebot_jetson_lidar_ed'
+    rviz_file = 'puzzlebot_markers.rviz'
+    rviz_config_file = os.path.join(get_package_share_directory('equipo6'), 'rviz', rviz_file)
 
     # Robot's initial position
-    pos_x = '0.0'   # X coordinate
-    pos_y = '0.0'   # Y coordinate
+    pos_x = '0.2'   # X coordinate
+    pos_y = '0.2'   # Y coordinate
     pos_th = '0.0'   # th angle
 
     # Simulation time and pause settings
@@ -33,9 +35,9 @@ def generate_launch_description():
     pause_gazebo = 'false' # Set to 'true' to start Gazebo in paused mode
 
     # Prefix, Camera, TOF and Lidar Frame names (Camera, TOF and Lidar only for Puzzlebot Jetson and Jetson Lidar Ed )
-    camera_frame = 'camera_link_optical_2'
-    lidar_frame = 'laser_frame_2'
-    tof_frame = 'tof_link_2'
+    camera_frame = 'camera_link_optical'
+    lidar_frame = 'laser_frame'
+    tof_frame = 'tof_link'
 
     # Verbosity level for Gazebo logs (higher means more detailed logs)
     gazebo_verbosity = 4
@@ -155,20 +157,23 @@ def generate_launch_description():
             arguments=[PathJoinSubstitution([TextSubstitution(text='camera')])]
         )
 
-    print_description = Node(
-    package='ros2cli',
-    executable='ros2',
-    arguments=['param', 'get', '/robot_state_publisher', 'robot_description'],
-    output='screen',
-    condition=IfCondition('true'),
+    rviz_node = Node(
+        package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen',
+            arguments=['-d', rviz_config_file],
+            parameters=[{
+                'use_sim_time': use_sim_time,
+            }],
+
     )
-    
 
  
     l_d = [
         declare_x_arg, declare_y_arg, declare_th_arg, declare_sim_time_arg, declare_pause_arg, declare_camera_frame_arg, 
         declare_tof_frame_arg, declare_lidar_frame_arg, set_gazebo_resources, set_gazebo_plugins, 
-        robot_state_publisher_node,start_gazebo_server_run, start_gazebo_server_paused, spawn_robot, start_gazebo_ros_bridge_cmd]
+        robot_state_publisher_node,start_gazebo_server_run, start_gazebo_server_paused, spawn_robot, start_gazebo_ros_bridge_cmd, rviz_node]
 
     # Conditionally add the image bridge
     if start_gazebo_ros_image_bridge_cmd:

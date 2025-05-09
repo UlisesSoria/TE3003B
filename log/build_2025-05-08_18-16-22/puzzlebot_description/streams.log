@@ -1,0 +1,79 @@
+[1.351s] Invoking command in '/home/ulisess/TE3003B/modulo_3/Act3.5/puzzlebot_description': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log --single-version-externally-managed install_data
+[1.704s] running egg_info
+[1.705s] creating ../build/puzzlebot_description/puzzlebot_description.egg-info
+[1.705s] writing ../build/puzzlebot_description/puzzlebot_description.egg-info/PKG-INFO
+[1.706s] writing dependency_links to ../build/puzzlebot_description/puzzlebot_description.egg-info/dependency_links.txt
+[1.706s] writing entry points to ../build/puzzlebot_description/puzzlebot_description.egg-info/entry_points.txt
+[1.707s] writing requirements to ../build/puzzlebot_description/puzzlebot_description.egg-info/requires.txt
+[1.707s] writing top-level names to ../build/puzzlebot_description/puzzlebot_description.egg-info/top_level.txt
+[1.707s] writing manifest file '../build/puzzlebot_description/puzzlebot_description.egg-info/SOURCES.txt'
+[1.711s] reading manifest file '../build/puzzlebot_description/puzzlebot_description.egg-info/SOURCES.txt'
+[1.711s] adding license file 'LICENSE'
+[1.714s] writing manifest file '../build/puzzlebot_description/puzzlebot_description.egg-info/SOURCES.txt'
+[1.715s] running build
+[1.715s] running build_py
+[1.715s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build
+[1.715s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib
+[1.715s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib/puzzlebot_description
+[1.715s] copying puzzlebot_description/__init__.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib/puzzlebot_description
+[1.715s] copying puzzlebot_description/joint_state_publisher.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib/puzzlebot_description
+[1.716s] running install
+[1.716s] running install_lib
+[1.717s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description
+[1.718s] copying /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib/puzzlebot_description/__init__.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description
+[1.719s] copying /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build/lib/puzzlebot_description/joint_state_publisher.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description
+[1.720s] byte-compiling /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description/__init__.py to __init__.cpython-310.pyc
+[1.720s] byte-compiling /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description/joint_state_publisher.py to joint_state_publisher.cpython-310.pyc
+[1.720s] running install_data
+[1.721s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/ament_index
+[1.721s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/ament_index/resource_index
+[1.721s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/ament_index/resource_index/packages
+[1.721s] copying resource/puzzlebot_description -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/ament_index/resource_index/packages
+[1.721s] copying package.xml -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description
+[1.721s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/launch
+[1.721s] copying launch/robot_state_publisher_launch.py -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/launch
+[1.721s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/config
+[1.722s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/rviz
+[1.722s] copying rviz/puzzlebot_desc.rviz -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/rviz
+[1.722s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf
+[1.722s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_sensors
+[1.722s] copying urdf/mcr2_sensors/lidar.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_sensors
+[1.723s] copying urdf/mcr2_sensors/laser_camera_bracket.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_sensors
+[1.723s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_control
+[1.723s] copying urdf/mcr2_control/gazebo_control.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_control
+[1.723s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_mechanical
+[1.723s] copying urdf/mcr2_mechanical/puzzlebot_jetson_lidar_base.urdf.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_mechanical
+[1.723s] copying urdf/mcr2_mechanical/puzzlebot_jetson_base.urdf.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_mechanical
+[1.724s] copying urdf/mcr2_mechanical/puzzlebot_hacker_base.urdf.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_mechanical
+[1.724s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots
+[1.724s] copying urdf/mcr2_robots/puzzlebot_jetson_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots
+[1.724s] copying urdf/mcr2_robots/puzzlebot_jetson_lidar_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots
+[1.725s] copying urdf/mcr2_robots/puzzlebot_hacker_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots
+[1.725s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/jetson_lidar_ed
+[1.726s] copying urdf/mcr2_robots/jetson_lidar_ed/parameters_jetson_lidar_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/jetson_lidar_ed
+[1.726s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/jetson_ed
+[1.726s] copying urdf/mcr2_robots/jetson_ed/parameters_jetson_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/jetson_ed
+[1.727s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/hacker_ed
+[1.727s] copying urdf/mcr2_robots/hacker_ed/parameters_hacker_ed.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_robots/hacker_ed
+[1.727s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_misc
+[1.727s] copying urdf/mcr2_misc/macros.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_misc
+[1.727s] copying urdf/mcr2_misc/materials.xacro -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/urdf/mcr2_misc
+[1.727s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes
+[1.727s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/bases
+[1.728s] copying meshes/bases/Puzzlebot_Hacker_Editon_Base.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/bases
+[1.728s] copying meshes/bases/Puzzlebot_Jetson_Lidar_Edition_Base.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/bases
+[1.728s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/wheels
+[1.729s] copying meshes/wheels/Puzzlebot_Caster_Wheel.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/wheels
+[1.729s] copying meshes/wheels/Puzzlebot_Wheel.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/wheels
+[1.730s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/misc
+[1.730s] copying meshes/misc/NVIDIA_Jetson.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/misc
+[1.731s] copying meshes/misc/DC_Motor.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/misc
+[1.732s] creating /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/sensors
+[1.732s] copying meshes/sensors/RPLidar.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/sensors
+[1.732s] copying meshes/sensors/Laser_Camera_Bracket.stl -> /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/share/puzzlebot_description/meshes/sensors
+[1.733s] running install_egg_info
+[1.737s] Copying ../build/puzzlebot_description/puzzlebot_description.egg-info to /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages/puzzlebot_description-0.0.0-py3.10.egg-info
+[1.738s] running install_scripts
+[1.769s] Installing joint_state_publisher script to /home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/puzzlebot_description
+[1.769s] writing list of installed files to '/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log'
+[1.832s] Invoked command in '/home/ulisess/TE3003B/modulo_3/Act3.5/puzzlebot_description' returned '0': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/Act3.5/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/build install --record /home/ulisess/TE3003B/modulo_3/Act3.5/build/puzzlebot_description/install.log --single-version-externally-managed install_data
