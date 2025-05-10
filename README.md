@@ -18,3 +18,6 @@ Finally install the ros_gz package
 ```
 sudo apt-get install ros-humble-ros-gzgarden
 ```
+
+my_map_equipo6.pgm es el mapaesultado de un recorrido de ida y regreso
+my_map_equiposeis.pgm es el mapa resultado de solo un recorrido de ida. 
