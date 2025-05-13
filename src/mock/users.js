@@ -35,6 +35,15 @@ const users = [
     password: "emery",
     name: "Emery Bautista",
     address: "Calle de la Amargura 123",
+  },
+
+  {
+    id:6,
+    email: "A01770848@tec.mx",
+    password: "emerybb",
+    name: "Alex Salgado",
+    address: "Calle de la Amargura 123",
+
   }
 ];
 
