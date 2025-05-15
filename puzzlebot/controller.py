@@ -1,104 +1,114 @@
 import rclpy
-import ast
 from rclpy.node import Node
-from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
+from sensor_msgs.msg import LaserScan
 import numpy as np
-import transforms3d
+from copy import deepcopy
+import signal # To handle Ctrl+C
+import sys # To exit the program
 
-class Controller(Node):
+class FollowWalls(Node):
     def __init__(self):
-        super().__init__('controller')
+        super().__init__('wall_following')
+        self.pub_cmd_vel = self.create_publisher(Twist, "cmd_vel", 10)
+        signal.signal(signal.SIGINT, self.shutdown_function)
+        self.sub = self.create_subscription(LaserScan, "scan", self.lidar_cb, 10)
+        self.lidar = LaserScan() # Data from lidar will be stored here.
+        self.robot_vel = Twist() #Robot velocity
+        self.start_fw_distance = 0.4 # Distance to start the wall following behavior
+        self.fw_distance = 0.2 #Distance to the wall we want to follow
+        self.v_max = 0.4 # Maximum linear velocity of the robot
+        self.w_max = 1.3 # Maximum angular velocity of the robot
+        self.kw2 = 0.4 # Gain for the proximity controller
+        self.kw1 = 0.3 # Gain for the orientation controller
+        timer_period = 0.1  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.get_logger().info("Following Walls Node initialized!!!")
 
-        # List of goal positions (x, y) without orientation
-        self.declare_parameter('goals', '[[1.0, 0.0], [1.0, 1.0], [0.0, 1.0], [0.0, 0.0]]')
-        
-        goals_str = self.get_parameter('goals').value
-        
-        try:
-            self.goals = ast.literal_eval(goals_str)
-        except Exception as e:
-            self.get_logger().error(f"Error parsing 'goals': {e}")
-            self.goals = []
-        self.current_goal_index = 0
+    def timer_callback(self):
+        if self.lidar.ranges: #if we have data inside the lidar message
+            closest_range, closest_angle = self.get_closest_object()
+            ao_angle = self.get_ao_angle(closest_angle)
+            if closest_range > self.start_fw_distance: # If the closest object is far away, we can move forward
+                self.robot_vel.linear.x = self.v_max
+                self.robot_vel.angular.z = 0.0
+            else: # If the closest object is close, we start following the wall.
+                fwcc_angle = self.get_fwcc_angle(ao_angle)
+                wfw1 = self.kw1 * (fwcc_angle) # Proportional controller to align the robot with the wall
+                size = len(self.lidar.ranges)
+                left_distance = min(self.lidar.ranges[int(3*size/20):int(5*size/20)])
+                proximity_controller_error = left_distance - self.fw_distance
+                wfw2 = self.kw2 * proximity_controller_error
+                front_region = self.lidar.ranges[int(19*size/20):int(20*size/20)]+ self.lidar.ranges[int(0):int(1*size/20)]
+                front_distance = min(front_region)
+                front_left_distance = min(self.lidar.ranges[int(1*size/20):int(3*size/20)])
+                back_left_distance = min(self.lidar.ranges[int(5*size/20):int(7*size/20)])
+                if front_distance < self.fw_distance: # Check if there is an obstacle in front of the robot.
+                    self.get_logger().warn("Inner corner detected, turn right")
+                    self.robot_vel.linear.x = 0.0
+                    self.robot_vel.angular.z = -self.w_max
+                elif front_distance < self.fw_distance*2.0:  # Check if there is an obstacle close to the front of the robot.
+                    self.get_logger().warn("Inner corner detected, slow_down eft")
+                    self.robot_vel.linear.x = 0.5 * self.v_max
+                elif back_left_distance < self.start_fw_distance and left_distance >= self.start_fw_distance and front_left_distance >= self.start_fw_distance and front_distance >= self.start_fw_distance:
+                    self.get_logger().warn("Outer corner detected, turn left")
+                    self.robot_vel.linear.x = self.v_max/5.0
+                    self.robot_vel.angular.z = self.w_max
+                else: # Normal case, follow the wall
+                    self.robot_vel.linear.x = self.v_max
+                    self.robot_vel.angular.z = wfw1 + wfw2
+            self.pub_cmd_vel.publish(self.robot_vel)
 
-        # Control gains
-        self.k_rho = 0.7
-        self.k_alpha = 1.5
+    def lidar_cb(self, msg):
+        self.lidar =  msg
+        inf_value = 100.0 # Set the inf values to a very large value
+        for i in range(len(self.lidar.ranges)):
+            if np.isinf(self.lidar.ranges[i]):
+                self.lidar.ranges[i] = inf_value
 
-        # Tolerances
-        self.orientation_tolerance = 0.1   # rad
-        self.position_tolerance = 0.05     # m
+    def get_regions(self, lidar):
+        size = len(lidar.ranges) # number of elements in the lidar data
+        regions = {
+            'front':  min(lidar.ranges[int(19*size/20):int(20*size/20-1)]+lidar.ranges[0:int(size/20)]),
+            'front_left':  min(lidar.ranges[int(size/20):int(3*size/20)]),
+            'left': min(lidar.ranges[int(3*size/20):int(5*size/20)]),
+            'back_left':  min(lidar.ranges[int(5*size/20):int(7*size/20)]),
+            'front_right':  min(lidar.ranges[int(17*size/20):int(19*size/20)]),
+            'right': min(lidar.ranges[int(15*size/20):int(17*size/20)]),
+            'back_right':  min(lidar.ranges[int(13*size/20):int(15*size/20)])
+        }
+        return regions
 
-        # Publisher and subscriber
-        self.cmd_pub = self.create_publisher(Twist, 'cmd_vel', 10)
-        self.create_subscription(Odometry, 'odom', self.odom_callback, 10)
+    def get_fwcc_angle(self, closest_angle):
+        fwcc_angle = closest_angle + np.pi/2
+        fwcc_angle = np.arctan2(np.sin(fwcc_angle), np.cos(fwcc_angle))
+        return fwcc_angle
 
-    def odom_callback(self, msg):
-        # Stop if all goals are reached
-        if self.current_goal_index >= len(self.goals):
-            return
+    def get_closest_object(self):
+        closest_range = min(self.lidar.ranges)
+        closest_index = self.lidar.ranges.index(closest_range)
+        closest_angle = self.lidar.angle_min + closest_index*self.lidar.angle_increment
+        closest_angle = np.arctan2(np.sin(closest_angle), np.cos(closest_angle))
+        return closest_range, closest_angle
 
-        # Get robot current pose
-        x = msg.pose.pose.position.x
-        y = msg.pose.pose.position.y
-        q = msg.pose.pose.orientation
-        _, _, theta = transforms3d.euler.quat2euler([q.w, q.x, q.y, q.z])
+    def get_ao_angle(self, closest_angle):
+        ao_angle = closest_angle + np.pi
+        ao_angle = np.arctan2(np.sin(ao_angle), np.cos(ao_angle))
+        return ao_angle
 
-        # Get current goal
-        x_goal, y_goal = self.goals[self.current_goal_index]
-
-        # Calculate errors
-        dx = x_goal - x
-        dy = y_goal - y
-        rho = np.hypot(dx, dy)  # distance to goal
-        angle_to_goal = np.arctan2(dy, dx)
-        alpha = self.normalize_angle(angle_to_goal - theta)
-
-        # Velocity command
-        cmd = Twist()
-
-        if rho < self.position_tolerance:
-            # Goal reached, move to the next one
-            self.get_logger().info(f"Goal {self.current_goal_index+1} reached.")
-            self.current_goal_index += 1
-            
-            # If it was the last goal, send stop command
-            if self.current_goal_index >= len(self.goals):
-                stop_cmd = Twist()
-                self.cmd_pub.publish(stop_cmd)
-            return
-
-        elif abs(alpha) > self.orientation_tolerance:
-            # Align to goal
-            cmd.linear.x = 0.0
-            cmd.angular.z = self.k_alpha * alpha
-        else:
-            # Go to goal
-            cmd.linear.x = self.k_rho * rho
-            cmd.angular.z = 0.0
-
-            # Ensure a minimum speed for responsiveness
-            if cmd.linear.x < 0.02:
-                cmd.linear.x = 0.02
-
-        self.cmd_pub.publish(cmd)
-
-    def normalize_angle(self, angle):
-        # Normalize angle to the range [-pi, pi]
-        return np.arctan2(np.sin(angle), np.cos(angle))
+    def shutdown_function(self, signum, frame):
+        self.get_logger().info("Ctrl+C pressed. Stopping robot...")
+        stop_twist = Twist()  # All zeros to stop the robot
+        self.pub_cmd_vel.publish(stop_twist) # Send stop command to the robot
+        rclpy.shutdown() # Shutdown the node
+        sys.exit(0) # Exit the program
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Controller()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        if rclpy.ok():
-            rclpy.shutdown()
-        node.destroy_node()
+    m_p=FollowWalls()
+    rclpy.spin(m_p)
+    m_p.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
