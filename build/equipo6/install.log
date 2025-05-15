@@ -1,15 +1,19 @@
+/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6/odometry_publisher.py
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6/__init__.py
+/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6/__pycache__/odometry_publisher.cpython-310.pyc
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6/__pycache__/__init__.cpython-310.pyc
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/ament_index/resource_index/packages/equipo6
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.xml
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/launch/robot_state_pub_launch.py
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/launch/spawn_puzzlebot_launch.py
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/launch/world_launch.py
+/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/config/puzzlebot.yaml
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/config/puzzlebot_hacker_ed.yaml
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/config/puzzlebot_jetson_lidar_ed.yaml
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/config/puzzlebot_jetson_ed.yaml
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/simple_puzzlebot_rviz.rviz
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/multi_puzzlebot_rviz.rviz
+/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/navigation rviz.rviz
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/puzzlebot_rviz.rviz
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/rviz.rviz
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/rviz/puzzlebot_markers.rviz
@@ -31,3 +35,4 @@
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info/entry_points.txt
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info/PKG-INFO
 /home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info/top_level.txt
+/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/equipo6/odometry_publisher

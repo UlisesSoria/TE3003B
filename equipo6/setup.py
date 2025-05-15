@@ -36,7 +36,10 @@ setup(
     [
         (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
         for root, _, files in os.walk('plugins') for file in files
-    ],
+    ]
+    
+    
+    ,
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='emeryb',
@@ -46,6 +49,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'odometry_publisher = equipo6.odometry_publisher.py:main',
         ],
     },
 )

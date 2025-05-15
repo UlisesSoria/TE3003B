@@ -1,0 +1,165 @@
+[0.140s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.141s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7de16a490190>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7de16a40da80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7de16a40da80>>, mixin_verb=('build',))
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.358s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/emeryb/ros2_ws/src/equipo6/TE3003B'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extension 'ignore_ament_install'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extensions ['colcon_pkg']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extension 'colcon_pkg'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extensions ['colcon_meta']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extension 'colcon_meta'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extensions ['ros']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(equipo6) by extension 'ros'
+[0.380s] DEBUG:colcon.colcon_core.package_identification:Package 'equipo6' with type 'ros.ament_python' and name 'equipo6'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(puzzlebot_description) by extension 'ros'
+[0.383s] DEBUG:colcon.colcon_core.package_identification:Package 'puzzlebot_description' with type 'ros.ament_python' and name 'puzzlebot_description'
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.430s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.430s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.432s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/emeryb/ros2_utilities_ws/install
+[0.433s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/emeryb/ros2_ws/install
+[0.433s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/emeryb/install
+[0.435s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 378 installed packages in /opt/ros/humble
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_target' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_clean_cache' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_clean_first' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'cmake_force_configure' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'ament_cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'catkin_cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'equipo6' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.498s] DEBUG:colcon.colcon_core.verb:Building package 'equipo6' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6', 'merge_install': False, 'path': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/equipo6', 'symlink_install': False, 'test_result_base': None}
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_target' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'puzzlebot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.499s] DEBUG:colcon.colcon_core.verb:Building package 'puzzlebot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description', 'merge_install': False, 'path': '/home/emeryb/ros2_ws/src/equipo6/TE3003B/puzzlebot_description', 'symlink_install': False, 'test_result_base': None}
+[0.499s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.502s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/equipo6' with build type 'ament_python'
+[0.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('equipo6', 'ament_prefix_path')
+[0.505s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/ament_prefix_path.ps1'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/ament_prefix_path.dsv'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/ament_prefix_path.sh'
+[0.507s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.507s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.513s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/puzzlebot_description' with build type 'ament_python'
+[0.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_description', 'ament_prefix_path')
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/ament_prefix_path.ps1'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/ament_prefix_path.dsv'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/ament_prefix_path.sh'
+[0.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.911s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/equipo6'
+[0.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.272s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/puzzlebot_description'
+[1.273s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.273s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/puzzlebot_description': PYTHONPATH=/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/build install --record /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/install.log --single-version-externally-managed install_data
+[1.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/equipo6': PYTHONPATH=/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/build install --record /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/install.log --single-version-externally-managed install_data
+[2.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/puzzlebot_description' returned '0': PYTHONPATH=/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/puzzlebot_description build --build-base /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/build install --record /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/puzzlebot_description/install.log --single-version-externally-managed install_data
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description' for CMake module files
+[2.210s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description' for CMake config files
+[2.212s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/lib'
+[2.212s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/bin'
+[2.212s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/lib/pkgconfig/puzzlebot_description.pc'
+[2.213s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/lib/python3.10/site-packages'
+[2.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzlebot_description', 'pythonpath')
+[2.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/pythonpath.ps1'
+[2.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/pythonpath.dsv'
+[2.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/hook/pythonpath.sh'
+[2.216s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/bin'
+[2.216s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzlebot_description)
+[2.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/package.ps1'
+[2.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/package.dsv'
+[2.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/package.sh'
+[2.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/package.bash'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/puzzlebot_description/package.zsh'
+[2.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/puzzlebot_description/share/colcon-core/packages/puzzlebot_description)
+[2.228s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6' for CMake module files
+[2.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/emeryb/ros2_ws/src/equipo6/TE3003B/equipo6' returned '0': PYTHONPATH=/home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/build install --record /home/emeryb/ros2_ws/src/equipo6/TE3003B/build/equipo6/install.log --single-version-externally-managed install_data
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6' for CMake config files
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/bin'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/pkgconfig/equipo6.pc'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/lib/python3.10/site-packages'
+[2.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('equipo6', 'pythonpath')
+[2.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/pythonpath.ps1'
+[2.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/pythonpath.dsv'
+[2.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/hook/pythonpath.sh'
+[2.236s] Level 1:colcon.colcon_core.environment:checking '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/bin'
+[2.236s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(equipo6)
+[2.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.ps1'
+[2.237s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.dsv'
+[2.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.sh'
+[2.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.bash'
+[2.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/equipo6/package.zsh'
+[2.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/equipo6/share/colcon-core/packages/equipo6)
+[2.241s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.242s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.242s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.252s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.253s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.253s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.283s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.284s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/local_setup.ps1'
+[2.286s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/_local_setup_util_ps1.py'
+[2.289s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/setup.ps1'
+[2.292s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/local_setup.sh'
+[2.293s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/_local_setup_util_sh.py'
+[2.295s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/setup.sh'
+[2.297s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/local_setup.bash'
+[2.299s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/setup.bash'
+[2.301s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/local_setup.zsh'
+[2.302s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/emeryb/ros2_ws/src/equipo6/TE3003B/install/setup.zsh'

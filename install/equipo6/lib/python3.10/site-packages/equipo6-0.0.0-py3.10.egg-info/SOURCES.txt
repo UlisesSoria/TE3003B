@@ -8,10 +8,12 @@ setup.py
 ../build/equipo6/equipo6.egg-info/requires.txt
 ../build/equipo6/equipo6.egg-info/top_level.txt
 ../build/equipo6/equipo6.egg-info/zip-safe
+config/puzzlebot.yaml
 config/puzzlebot_hacker_ed.yaml
 config/puzzlebot_jetson_ed.yaml
 config/puzzlebot_jetson_lidar_ed.yaml
 equipo6/__init__.py
+equipo6/odometry_publisher.py
 launch/robot_state_pub_launch.py
 launch/spawn_puzzlebot_launch.py
 launch/world_launch.py
@@ -27,6 +29,7 @@ models/simple_light/model.sdf
 plugins/libDiffDynamicPlugin.so
 resource/equipo6
 rviz/multi_puzzlebot_rviz.rviz
+rviz/navigation rviz.rviz
 rviz/puzzlebot_markers.rviz
 rviz/puzzlebot_rviz.rviz
 rviz/rviz.rviz

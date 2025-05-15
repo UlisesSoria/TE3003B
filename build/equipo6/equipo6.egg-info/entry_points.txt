@@ -1,3 +1,3 @@
 [console_scripts]
-
+odometry_publisher = equipo6.odometry_publisher.py:main
 
