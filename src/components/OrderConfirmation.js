@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import mqtt from 'mqtt';
+import stores from '../mock/stores';
 
 const OrderConfirmation = ({ orderDetails, onClose }) => {
   // React: enviar orden de delivery
@@ -10,6 +12,47 @@ const OrderConfirmation = ({ orderDetails, onClose }) => {
   .then(res => res.json())
   .then(data => console.log(data));
 */
+  // MQTT Implementation
+  useEffect(() => {
+    const client = mqtt.connect("ws://10.25.101.96:9001");
+
+    client.on("connect", () => {
+      console.log("Connected to MQTT broker (Websocket connection)");
+    // Coordinates by restaurant
+      const coords = {
+        "Starbucks": {x: 1.0, y: 1.1, theta: 0.0},
+        "Sinforosa": {x: 1.5, y: 0.2, theta: 0.0},
+        "Tec Store": {x: 0.8, y: 1.6, theta: 0.0},
+        "Subway": {x: 0.5, y: 1.2, theta: 0.0},
+        "Tim Hortons": {x: 1.7, y: 2.2, theta: 0.0},
+        "Nutrisa": {x: 0.3, y: 1.2, theta: 0.0},
+        "Lechuguini": {x: 0.2, y: 2.7, theta: 0.0},
+        "Cinnabon": {x: 2.7, y: 2.7, theta: 0.0},
+        "Yukapioca": {x: 2.8, y: 1.2, theta: 0.0},
+        "Yellow Spot": {x: 2.3, y: 1.0, theta: 0.0},
+        "Mr. Grill": {x: 2.3, y: 0.3, theta: 0.0},
+        "Daisuki Sushi": {x: 2.8, y: 0.8, theta: 0.0},
+      };
+      console.log("📦 orderDetails:", orderDetails);
+
+      const restaurantName = orderDetails?.store?.trim?.(); 
+      // console.log("🏪 Store recibido:", stores);
+      const coord = coords[restaurantName];
+      console.log("🏪 Restaurante recibido:", restaurantName);
+
+      if (coord) {
+        client.publish("puzzlebot/goal", JSON.stringify(coord));
+        console.log(`📡 Coordenadas publicadas para ${restaurantName}:`, coord);
+      } else {
+        console.warn("⚠️ Restaurante no reconocido o faltan detalles:", restaurantName);
+      }
+    });
+
+    return () => {
+      client.end();
+    };
+  }, [orderDetails]);
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-40">
       <div className="bg-white rounded-xl p-6 max-w-md w-full">
