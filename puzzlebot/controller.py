@@ -10,9 +10,9 @@ import signal
 import sys
 from copy import deepcopy  # Added this import
 
-class EnhancedBug0WithWallFollow(Node):
+class Bug0(Node):
     def __init__(self):
-        super().__init__('enhanced_bug0_with_wall_follow')
+        super().__init__('bug0')
 
         # Publicador al tópico cmd_vel
         self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
@@ -198,7 +198,7 @@ class EnhancedBug0WithWallFollow(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    controller = EnhancedBug0WithWallFollow()
+    controller = Bug0()
     controller.set_goal(1.45, 1.20)  # Establece el objetivo
 
     try:
