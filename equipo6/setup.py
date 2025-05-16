@@ -49,7 +49,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'odometry_publisher = equipo6.odometry_publisher.py:main',
+            'odometry_publisher = equipo6.odometry_publisher:main',
+            'localisation = equipo6.localisation:main',
+            'joint_state_pub = equipo6.joint_state_pub:main',
         ],
     },
 )

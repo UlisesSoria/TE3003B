@@ -1,3 +1,5 @@
 [console_scripts]
-odometry_publisher = equipo6.odometry_publisher.py:main
+joint_state_pub = equipo6.joint_state_pub:main
+localisation = equipo6.localisation:main
+odometry_publisher = equipo6.odometry_publisher:main
 

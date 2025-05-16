@@ -2,7 +2,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (DeclareLaunchArgument, SetEnvironmentVariable, 
                             IncludeLaunchDescription, SetLaunchConfiguration)
-from launch.substitutions import PathJoinSubstitution, LaunchConfiguration, TextSubstitution, Command, ThisLaunchFileDir
+from launch.substitutions import PathJoinSubstitution, LaunchConfiguration, TextSubstitution, Command, PythonExpression
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
@@ -22,11 +22,12 @@ def generate_launch_description():
     robot = 'puzzlebot_jetson_lidar_ed'
     rviz_file = 'navigation rviz.rviz'
     rviz_config_file = os.path.join(get_package_share_directory('equipo6'), 'rviz', rviz_file)
+    mode = LaunchConfiguration('mode')
 
     # Robot's initial position
     pos_x = '0.2'
     pos_y = '0.2'
-    pos_th = '0.0'
+    pos_th = '1.6'
 
     # Simulation time and pause settings
     sim_time = 'true'
@@ -51,6 +52,9 @@ def generate_launch_description():
     gazebo_models_path = os.path.join(gazebo_resources, 'models')
     gazebo_plugins_path = os.path.join(gazebo_resources,'plugins')
     gazebo_media_path = os.path.join(gazebo_models_path,'models', 'media', 'materials')
+    param_nav2 = '/home/ulisess/TE3003B/modulo_3/ActFinal/puzzlebot.yaml'
+    map_path = '/home/ulisess/TE3003B/modulo_3/ActFinal/my_map_equipo6.yaml'
+    nav2_dir = get_package_share_directory('nav2_bringup')
     default_ros_gz_bridge_config_file_path = os.path.join(gazebo_resources, 'config', f"{robot}.yaml")
 
     # Launch arguments
@@ -129,6 +133,26 @@ def generate_launch_description():
         output="screen",
     )
 
+    joint_state_publisher_node = Node(
+        package="equipo6",
+        executable="joint_state_pub",
+        name="joint_state_pub",
+        output="screen",
+        parameters=[{
+            "x": x,
+            "y": y,
+            "z": '0.0',
+            "frame": 'odom',
+        }],
+    )
+
+    localisation_node = Node(
+        package="equipo6",
+        executable="localisation",
+        name="localisation",
+        output="screen"
+    )
+
     spawn_robot = Node(
         package="ros_gz_sim",
         executable="create",
@@ -156,6 +180,7 @@ def generate_launch_description():
             arguments=[PathJoinSubstitution([TextSubstitution(text='camera')])]
         )
 
+
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -167,15 +192,27 @@ def generate_launch_description():
         }],
     )
 
+    # === Nav2 Bringup ===
+    nav2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([nav2_dir, 'launch', 'bringup_launch.py'])
+        ),
+        launch_arguments={
+            'use_sim_time': use_sim_time,
+            'autostart': 'true',
+            'params_file': param_nav2,
+            'map': map_path,
+        }.items()
+    )
+
 
     # Launch description
     l_d = [
         declare_x_arg, declare_y_arg, declare_th_arg, declare_sim_time_arg, declare_pause_arg, 
         declare_camera_frame_arg, declare_tof_frame_arg, declare_lidar_frame_arg,
         set_gazebo_resources, set_gazebo_plugins, 
-        robot_state_publisher_node, start_gazebo_server_run, start_gazebo_server_paused,
-        odometry_node, spawn_robot,
-        start_gazebo_ros_bridge_cmd, rviz_node,
+        robot_state_publisher_node, start_gazebo_server_run, start_gazebo_server_paused, spawn_robot,
+        start_gazebo_ros_bridge_cmd, odometry_node, nav2_launch,localisation_node, rviz_node,
     ]
 
     if start_gazebo_ros_image_bridge_cmd:

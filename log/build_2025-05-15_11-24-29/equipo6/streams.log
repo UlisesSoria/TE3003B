@@ -1,0 +1,30 @@
+[1.208s] Invoking command in '/home/ulisess/TE3003B/modulo_3/ActFinal/equipo6': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build install --record /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/install.log --single-version-externally-managed install_data
+[1.522s] running egg_info
+[1.523s] writing ../build/equipo6/equipo6.egg-info/PKG-INFO
+[1.523s] writing dependency_links to ../build/equipo6/equipo6.egg-info/dependency_links.txt
+[1.523s] writing entry points to ../build/equipo6/equipo6.egg-info/entry_points.txt
+[1.524s] writing requirements to ../build/equipo6/equipo6.egg-info/requires.txt
+[1.524s] writing top-level names to ../build/equipo6/equipo6.egg-info/top_level.txt
+[1.527s] reading manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[1.529s] writing manifest file '../build/equipo6/equipo6.egg-info/SOURCES.txt'
+[1.529s] running build
+[1.530s] running build_py
+[1.532s] copying equipo6/joint_state_pub.py -> /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build/lib/equipo6
+[1.532s] copying equipo6/localisation.py -> /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build/lib/equipo6
+[1.533s] running install
+[1.533s] running install_lib
+[1.534s] copying /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build/lib/equipo6/joint_state_pub.py -> /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6
+[1.535s] copying /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build/lib/equipo6/localisation.py -> /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6
+[1.536s] byte-compiling /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6/joint_state_pub.py to joint_state_pub.cpython-310.pyc
+[1.538s] byte-compiling /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6/localisation.py to localisation.cpython-310.pyc
+[1.539s] running install_data
+[1.539s] copying launch/world_launch.py -> /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/share/equipo6/launch
+[1.541s] running install_egg_info
+[1.543s] removing '/home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info' (and everything under it)
+[1.543s] Copying ../build/equipo6/equipo6.egg-info to /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages/equipo6-0.0.0-py3.10.egg-info
+[1.545s] running install_scripts
+[1.569s] Installing joint_state_pub script to /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/equipo6
+[1.570s] Installing localisation script to /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/equipo6
+[1.570s] Installing odometry_publisher script to /home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/equipo6
+[1.571s] writing list of installed files to '/home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/install.log'
+[1.638s] Invoked command in '/home/ulisess/TE3003B/modulo_3/ActFinal/equipo6' returned '0': PYTHONPATH=/home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/modulo_3/ActFinal/install/equipo6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/equipo6 build --build-base /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/build install --record /home/ulisess/TE3003B/modulo_3/ActFinal/build/equipo6/install.log --single-version-externally-managed install_data
