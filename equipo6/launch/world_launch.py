@@ -35,7 +35,7 @@ def generate_launch_description():
 
     # Frame names
     camera_frame = 'camera_link_optical'
-    lidar_frame = 'laser_frame'
+    lidar_frame = 'laser'
     tof_frame = 'tof_link'
 
     # Gazebo verbosity level
@@ -210,9 +210,7 @@ def generate_launch_description():
     l_d = [
         declare_x_arg, declare_y_arg, declare_th_arg, declare_sim_time_arg, declare_pause_arg, 
         declare_camera_frame_arg, declare_tof_frame_arg, declare_lidar_frame_arg,
-        set_gazebo_resources, set_gazebo_plugins, 
-        robot_state_publisher_node, start_gazebo_server_run, start_gazebo_server_paused, spawn_robot,
-        start_gazebo_ros_bridge_cmd, odometry_node, nav2_launch,localisation_node, rviz_node,
+        robot_state_publisher_node, odometry_node, nav2_launch,localisation_node, rviz_node,
     ]
 
     if start_gazebo_ros_image_bridge_cmd:
