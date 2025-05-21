@@ -1,0 +1,33 @@
+[1.418s] Invoking command in '/home/ulisess/TE3003B/minichallenges/TE3003B': PYTHONPATH=/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot build --build-base /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build install --record /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log --single-version-externally-managed install_data
+[1.961s] running egg_info
+[1.963s] writing build/puzzlebot/puzzlebot.egg-info/PKG-INFO
+[1.963s] writing dependency_links to build/puzzlebot/puzzlebot.egg-info/dependency_links.txt
+[1.964s] writing entry points to build/puzzlebot/puzzlebot.egg-info/entry_points.txt
+[1.965s] writing requirements to build/puzzlebot/puzzlebot.egg-info/requires.txt
+[1.965s] writing top-level names to build/puzzlebot/puzzlebot.egg-info/top_level.txt
+[1.971s] reading manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[1.971s] adding license file 'LICENSE'
+[1.976s] writing manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[1.976s] running build
+[1.976s] running build_py
+[1.977s] copying puzzlebot/controller.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot
+[1.978s] running install
+[1.980s] running install_lib
+[1.982s] copying /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot/controller.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot
+[1.985s] byte-compiling /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/controller.py to controller.cpython-310.pyc
+[1.990s] running install_data
+[1.993s] running install_egg_info
+[2.000s] removing '/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info' (and everything under it)
+[2.001s] Copying build/puzzlebot/puzzlebot.egg-info to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info
+[2.003s] running install_scripts
+[2.062s] Installing conditions script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.063s] Installing controller script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.065s] Installing gtg script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.065s] Installing joint_state_pub script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.066s] Installing localisation script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.067s] Installing localisationv2 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.067s] Installing pid script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.068s] Installing puzzlebot_kinematic_model script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.069s] Installing wf script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[2.069s] writing list of installed files to '/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log'
+[2.174s] Invoked command in '/home/ulisess/TE3003B/minichallenges/TE3003B' returned '0': PYTHONPATH=/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot build --build-base /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build install --record /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log --single-version-externally-managed install_data

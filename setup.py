@@ -15,8 +15,26 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
         (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.[yma]*'))),
         (os.path.join('share', package_name, 'rviz'), glob(os.path.join('rviz', '*.rviz'))),
-        (os.path.join('share', package_name, 'meshes'), glob(os.path.join('meshes', '*.stl'))),
-        (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.urdf'))),
+    ]+ [
+        (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
+        for root, _, files in os.walk('urdf') for file in files
+    ]+
+    [
+        (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
+        for root, _, files in os.walk('meshes') for file in files
+    ]+
+    [
+        (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
+        for root, _, files in os.walk('models') for file in files
+    ]+
+    [
+        (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
+        for root, _, files in os.walk('worlds') for file in files
+    ]
+    +
+    [
+        (os.path.join('share', package_name, root), [os.path.join(root, file)]) 
+        for root, _, files in os.walk('plugins') for file in files
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,14 +45,13 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'minichallenge1 = puzzlebot.minichallenge1:main',
             'puzzlebot_kinematic_model = puzzlebot.puzzlebot_kinematic_model:main',
             'joint_state_pub = puzzlebot.joint_state_pub:main',
             'localisation = puzzlebot.localisation:main',
-            'localisationv2 = puzzlebot.localisationv2:main',
-            'point_stabilisation_control = puzzlebot.point_stabilisation_control:main',
-            'move_forward = puzzlebot.move_forward:main',
-            'controller = puzzlebot.controller:main',
+            'localisatonv2 = puzzlebot.localisationv2:main',
+            'bug0 = puzzlebot.bug0:main',
+            'bug2 = puzzlebot.bug2:main',
+            'publish_odom = puzzlebot.publish_odom:main',
         ],
     },
 )

@@ -1,0 +1,27 @@
+running egg_info
+writing build/puzzlebot/puzzlebot.egg-info/PKG-INFO
+writing dependency_links to build/puzzlebot/puzzlebot.egg-info/dependency_links.txt
+writing entry points to build/puzzlebot/puzzlebot.egg-info/entry_points.txt
+writing requirements to build/puzzlebot/puzzlebot.egg-info/requires.txt
+writing top-level names to build/puzzlebot/puzzlebot.egg-info/top_level.txt
+reading manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/minichallenge4_launch.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/launch
+running install_egg_info
+removing '/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/puzzlebot/puzzlebot.egg-info to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bug0 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing bug2 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing joint_state_pub script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing localisation script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing localisatonv2 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing publish_odom script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+Installing puzzlebot_kinematic_model script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+writing list of installed files to '/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log'
