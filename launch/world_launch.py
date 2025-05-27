@@ -2,7 +2,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (DeclareLaunchArgument, SetEnvironmentVariable, 
                             IncludeLaunchDescription, SetLaunchConfiguration)
-from launch.substitutions import PathJoinSubstitution, LaunchConfiguration, TextSubstitution, Command, ThisLaunchFileDir
+from launch.substitutions import PathJoinSubstitution, LaunchConfiguration, TextSubstitution, Command
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
@@ -20,15 +20,14 @@ from launch.conditions import IfCondition, UnlessCondition
 def generate_launch_description():
 
     # World and robot file names
-    world_file = 'act3_4.world'
+    world_file = 'puzzlebot_aruco_markers.world'
     robot = 'puzzlebot_jetson_lidar_ed'
-    rviz_file = 'navigation rviz.rviz'
-    rviz_config_file = os.path.join(get_package_share_directory('puzzlebot'), 'rviz', rviz_file)
+    rviz_file = 'odometry_puzzlebot_rviz.rviz'
 
     # Robot's initial position
-    pos_x = '0.2'   # X coordinate
-    pos_y = '0.2'   # Y coordinate
-    pos_th = '1.6'   # th angle
+    pos_x = '0.0'   # X coordinate
+    pos_y = '0.0'   # Y coordinate
+    pos_th = '0.0'   # th angle
 
     # Simulation time and pause settings
     sim_time = 'true'  # Set to 'true' for sim time
@@ -54,6 +53,7 @@ def generate_launch_description():
     gazebo_plugins_path = os.path.join(gazebo_resources,'plugins')
     gazebo_media_path = os.path.join(gazebo_models_path,'models', 'media', 'materials')
     default_ros_gz_bridge_config_file_path = os.path.join(gazebo_resources, 'config', f"{robot}.yaml")
+    rviz_config_file_path = os.path.join(gazebo_resources, 'rviz', rviz_file)
 
     #  DECLARE LAUNCH ARGUMENTS  
     declare_x_arg = DeclareLaunchArgument('x', default_value=pos_x, description='X position of the robot')
@@ -85,8 +85,6 @@ def generate_launch_description():
         value=f"{gazebo_plugins_path}"
     )
     
-    print(f"Path-{str(robot_path)}")
-    
         # Robot description using xacro
     robot_description = Command([
         'xacro ', str(robot_path),
@@ -94,7 +92,6 @@ def generate_launch_description():
         ' tof_frame:=', tof_frame_name,
         ' lidar_frame:=', lidar_frame_name,
     ])
-
 
     # Path to Gazebo launch script
     gz_launch_path = PathJoinSubstitution([pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py'])
@@ -157,33 +154,63 @@ def generate_launch_description():
             arguments=[PathJoinSubstitution([TextSubstitution(text='camera')])]
         )
 
-    rviz_node = Node(
-        package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            output='screen',
-            arguments=['-d', rviz_config_file],
-            parameters=[{
-                'use_sim_time': use_sim_time,
-            }],
-
+    localisation_node = Node(
+        package='puzzlebot',
+        executable='localisation',
+        name='localisation',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}],
     )
 
+    aruco_detector_node = Node(
+        package='puzzlebot',
+        executable='aruco_detection',
+        name='aruco_detector',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+
+    pose_estimation_node = Node(
+        package='puzzlebot',
+        executable='pose_estimation',
+        name='pose_estimation',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+    
+    rviz = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file_path],
+        output='screen'
+    )
+    
     map_odom_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
+        name='map_odom_tf',
         arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'map', 'odom'],
-        output='screen',
+        output='screen'
     )
-
  
     l_d = [
-        map_odom_tf, declare_x_arg, declare_y_arg, declare_th_arg, declare_sim_time_arg, declare_pause_arg, declare_camera_frame_arg, 
+        declare_x_arg, declare_y_arg, declare_th_arg, declare_sim_time_arg, declare_pause_arg, declare_camera_frame_arg, 
         declare_tof_frame_arg, declare_lidar_frame_arg, set_gazebo_resources, set_gazebo_plugins, 
-        robot_state_publisher_node,start_gazebo_server_run, start_gazebo_server_paused, spawn_robot, start_gazebo_ros_bridge_cmd, rviz_node]
+        robot_state_publisher_node,start_gazebo_server_run, start_gazebo_server_paused, spawn_robot, start_gazebo_ros_bridge_cmd,
+        localisation_node, aruco_detector_node, 
+        map_odom_tf, rviz]
 
     # Conditionally add the image bridge
     if start_gazebo_ros_image_bridge_cmd:
         l_d.append(start_gazebo_ros_image_bridge_cmd)
 
     return LaunchDescription(l_d)
+
+
+
+
+
+
+
+

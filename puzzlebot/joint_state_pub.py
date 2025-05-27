@@ -43,7 +43,7 @@ class PuzzlebotTFBroadcaster(Node):
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = 'map'
-        t.child_frame_id = 'odom'
+        t.child_frame_id = self.odom_frame
         t.transform.translation.x = 0.0
         t.transform.translation.y = 0.0
         t.transform.translation.z = 0.0
@@ -92,7 +92,7 @@ class PuzzlebotTFBroadcaster(Node):
 
         self.t3.header.stamp = self.get_clock().now().to_msg()
         self.t3.header.frame_id = 'base_link'
-        self.t3.child_frame_id = 'wheel_l'
+        self.t3.child_frame_id = 'wheel_left_link'
         self.t3.transform.translation.x = 0.052
         self.t3.transform.translation.y = -0.095
         self.t3.transform.translation.z = -0.0025
@@ -104,7 +104,7 @@ class PuzzlebotTFBroadcaster(Node):
 
         self.t4.header.stamp = self.get_clock().now().to_msg()
         self.t4.header.frame_id = 'base_link'
-        self.t4.child_frame_id = 'wheel_r'
+        self.t4.child_frame_id = 'wheel_right_link'
         self.t4.transform.translation.x = 0.052
         self.t4.transform.translation.y = 0.095
         self.t4.transform.translation.z = -0.0025

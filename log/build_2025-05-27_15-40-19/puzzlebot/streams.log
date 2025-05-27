@@ -1,0 +1,48 @@
+[1.258s] Invoking command in '/home/ulisess/TE3003B/minichallenges/TE3003B': PYTHONPATH=/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot build --build-base /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build install --record /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log --single-version-externally-managed install_data
+[1.687s] running egg_info
+[1.687s] writing build/puzzlebot/puzzlebot.egg-info/PKG-INFO
+[1.689s] writing dependency_links to build/puzzlebot/puzzlebot.egg-info/dependency_links.txt
+[1.689s] writing entry points to build/puzzlebot/puzzlebot.egg-info/entry_points.txt
+[1.690s] writing requirements to build/puzzlebot/puzzlebot.egg-info/requires.txt
+[1.690s] writing top-level names to build/puzzlebot/puzzlebot.egg-info/top_level.txt
+[1.696s] reading manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[1.698s] adding license file 'LICENSE'
+[1.700s] writing manifest file 'build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[1.700s] running build
+[1.700s] running build_py
+[1.701s] copying puzzlebot/aruco_detection.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot
+[1.701s] copying puzzlebot/pose_estimation.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot
+[1.702s] copying puzzlebot/localisation.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot
+[1.702s] copying puzzlebot/bug0.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot
+[1.704s] running install
+[1.704s] running install_lib
+[1.706s] copying /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot/aruco_detection.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot
+[1.707s] copying /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot/pose_estimation.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot
+[1.707s] copying /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot/localisation.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot
+[1.708s] copying /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build/lib/puzzlebot/bug0.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot
+[1.709s] byte-compiling /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/aruco_detection.py to aruco_detection.cpython-310.pyc
+[1.711s] byte-compiling /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/pose_estimation.py to pose_estimation.cpython-310.pyc
+[1.715s] byte-compiling /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/localisation.py to localisation.cpython-310.pyc
+[1.718s] byte-compiling /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/bug0.py to bug0.cpython-310.pyc
+[1.721s] running install_data
+[1.722s] copying launch/minichallenge4_launch.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/launch
+[1.722s] copying launch/world_launch.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/launch
+[1.723s] copying launch/gazebo_world_launch.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/launch
+[1.723s] copying launch/gazebo_puzzlebot_launch.py -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/launch
+[1.728s] creating /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/plugins
+[1.729s] copying plugins/libDiffDynamicPlugin.so -> /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/share/puzzlebot/plugins
+[1.735s] running install_egg_info
+[1.738s] removing '/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.739s] Copying build/puzzlebot/puzzlebot.egg-info to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info
+[1.740s] running install_scripts
+[1.773s] Installing aruco_detection script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.773s] Installing bug0 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.774s] Installing bug2 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.774s] Installing joint_state_pub script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.774s] Installing localisation script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.775s] Installing localisatonv2 script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.775s] Installing pose_estimation script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.775s] Installing publish_odom script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.775s] Installing puzzlebot_kinematic_model script to /home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/puzzlebot
+[1.776s] writing list of installed files to '/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log'
+[1.822s] Invoked command in '/home/ulisess/TE3003B/minichallenges/TE3003B' returned '0': PYTHONPATH=/home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/puzzlebot build --build-base /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/build install --record /home/ulisess/TE3003B/minichallenges/TE3003B/build/puzzlebot/install.log --single-version-externally-managed install_data

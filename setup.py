@@ -52,6 +52,8 @@ setup(
             'bug0 = puzzlebot.bug0:main',
             'bug2 = puzzlebot.bug2:main',
             'publish_odom = puzzlebot.publish_odom:main',
+            'aruco_detection = puzzlebot.aruco_detection:main',
+            'pose_estimation = puzzlebot.pose_estimation:main',
         ],
     },
 )

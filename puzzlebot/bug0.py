@@ -8,6 +8,7 @@ import numpy as np
 import math
 import signal
 import sys
+from std_msgs.msg import Bool
 from copy import deepcopy  # Added this import
 
 class Bug0(Node):
@@ -16,6 +17,7 @@ class Bug0(Node):
 
         # Publicador al tópico cmd_vel
         self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.goal_pub = self.create_publisher(Bool, 'goal_reached', 10)
 
         # Suscriptores
         self.odom_sub = self.create_subscription(Odometry, 'odom', self.odom_callback, 10)
@@ -23,8 +25,8 @@ class Bug0(Node):
         self_goal_sub = self.create_subscription(Odometry, 'goal', self.isGoal_callback, 10)
 
         # Variables de estado
-        self.position = [0.0, 0.0]  # Posición (x, y)
-        self.yaw = 0.0
+        self.position = [0.2, 0.2]  # Posición (x, y)
+        self.yaw = 0.0  # Orientación inicial (en radianes)
         self.goal = None
         self.obstacle_detected = False
         self.lidar = None
@@ -33,8 +35,8 @@ class Bug0(Node):
         self.goal_y = 0.0
         
         # Parámetros de control
-        self.min_obstacle_distance = 0.5  # Distancia mínima para considerar un obstáculo
-        self.start_fw_distance = 0.5  # Distancia para iniciar el seguimiento de paredes
+        self.min_obstacle_distance = 0.67  # Distancia mínima para considerar un obstáculo
+        self.start_fw_distance = 0.46  # Distancia para iniciar el seguimiento de paredes
         self.fw_distance = 0.2  # Distancia deseada a la pared
         self.v_max = 0.5  # Velocidad lineal máxima
         self.w_max = 1.3  # Velocidad angular máxima
@@ -163,6 +165,7 @@ class Bug0(Node):
                 self.cmd_vel_pub.publish(twist)
         else:
             self.get_logger().info("¡Objetivo alcanzado!")
+            self.goal_pub.publish(True)  # Publica que el objetivo ha sido alcanzado
             self.stop_robot()
 
     def stop_robot(self):
@@ -212,7 +215,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     controller = Bug0()
-    controller.set_goal(1.45, 1.2)  # Establece el objetivo
+    controller.set_goal(2.0, 2.0)  # Establece el objetivo
 
     try:
         rclpy.spin(controller)

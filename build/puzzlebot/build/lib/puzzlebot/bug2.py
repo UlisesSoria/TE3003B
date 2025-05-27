@@ -21,8 +21,8 @@ class ImprovedBug2(Node):
         self.timer = self.create_timer(0.1, self.loop_callback)
         
         # Parámetros del objetivo
-        self.xg = 1.42
-        self.yg = 1.20
+        self.xg = 0.5
+        self.yg = -2.2
         self.goal_reached = False
         self.lidar_ready = False
 
@@ -40,7 +40,7 @@ class ImprovedBug2(Node):
         
         # Parámetros de control
         self.tolerance = 0.1  # Tolerancia para alcanzar el objetivo
-        self.following_distance = 0.3  # Distancia para seguir paredes
+        self.following_distance = 0.15  # Distancia para seguir paredes
         self.safety_distance = 0.2  # Distancia de seguridad para obstáculos
         self.m_line_tolerance = 0.1  # Tolerancia para estar en la línea m
         self.min_progress = 0.2  # Progreso mínimo para considerar avance
