@@ -1,0 +1,24 @@
+[1.136s] Invoking command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data
+[1.370s] running egg_info
+[1.371s] writing ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/PKG-INFO
+[1.371s] writing dependency_links to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/dependency_links.txt
+[1.371s] writing entry points to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/entry_points.txt
+[1.371s] writing requirements to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/requires.txt
+[1.371s] writing top-level names to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/top_level.txt
+[1.374s] reading manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[1.375s] adding license file 'LICENSE'
+[1.378s] writing manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[1.378s] running build
+[1.379s] running build_py
+[1.379s] running install
+[1.379s] running install_lib
+[1.380s] running install_data
+[1.381s] copying launch/bringup_simulation_simple_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.387s] copying worlds/pista.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.387s] running install_egg_info
+[1.389s] removing '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo-0.0.0-py3.10.egg-info' (and everything under it)
+[1.389s] Copying ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo-0.0.0-py3.10.egg-info
+[1.390s] running install_scripts
+[1.413s] Installing puzzlebot_gazebo script to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/puzzlebot_gazebo
+[1.414s] writing list of installed files to '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log'
+[1.460s] Invoked command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo' returned '0': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data

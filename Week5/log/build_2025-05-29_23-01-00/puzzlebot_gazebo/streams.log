@@ -1,0 +1,22 @@
+[2.346s] Invoking command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data
+[2.847s] running egg_info
+[2.847s] writing ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/PKG-INFO
+[2.847s] writing dependency_links to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/dependency_links.txt
+[2.848s] writing entry points to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/entry_points.txt
+[2.848s] writing requirements to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/requires.txt
+[2.849s] writing top-level names to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/top_level.txt
+[2.857s] reading manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[2.861s] adding license file 'LICENSE'
+[2.867s] writing manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[2.868s] running build
+[2.868s] running build_py
+[2.870s] running install
+[2.878s] running install_lib
+[2.878s] running install_data
+[2.888s] running install_egg_info
+[2.893s] removing '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo-0.0.0-py3.10.egg-info' (and everything under it)
+[2.893s] Copying ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo-0.0.0-py3.10.egg-info
+[2.895s] running install_scripts
+[2.942s] Installing puzzlebot_gazebo script to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/puzzlebot_gazebo
+[2.945s] writing list of installed files to '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log'
+[3.044s] Invoked command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo' returned '0': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data

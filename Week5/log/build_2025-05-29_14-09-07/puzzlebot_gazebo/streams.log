@@ -1,0 +1,358 @@
+[1.279s] Invoking command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data
+[1.534s] running egg_info
+[1.535s] creating ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info
+[1.535s] writing ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/PKG-INFO
+[1.536s] writing dependency_links to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/dependency_links.txt
+[1.536s] writing entry points to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/entry_points.txt
+[1.536s] writing requirements to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/requires.txt
+[1.536s] writing top-level names to ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/top_level.txt
+[1.536s] writing manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[1.541s] reading manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[1.541s] adding license file 'LICENSE'
+[1.543s] writing manifest file '../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info/SOURCES.txt'
+[1.543s] running build
+[1.543s] running build_py
+[1.543s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build
+[1.544s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib
+[1.544s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib/puzzlebot_gazebo
+[1.544s] copying puzzlebot_gazebo/__init__.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib/puzzlebot_gazebo
+[1.544s] copying puzzlebot_gazebo/puzzlebot_gazebo.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib/puzzlebot_gazebo
+[1.545s] running install
+[1.545s] running install_lib
+[1.545s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo
+[1.545s] copying /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib/puzzlebot_gazebo/__init__.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo
+[1.546s] copying /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build/lib/puzzlebot_gazebo/puzzlebot_gazebo.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo
+[1.546s] byte-compiling /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo/__init__.py to __init__.cpython-310.pyc
+[1.546s] byte-compiling /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo/puzzlebot_gazebo.py to puzzlebot_gazebo.cpython-310.pyc
+[1.546s] running install_data
+[1.547s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/ament_index
+[1.547s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/ament_index/resource_index
+[1.547s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/ament_index/resource_index/packages
+[1.547s] copying resource/puzzlebot_gazebo -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/ament_index/resource_index/packages
+[1.547s] copying package.xml -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo
+[1.547s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.547s] copying launch/gazebo_example_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.547s] copying launch/gazebo_puzzlebot_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.547s] copying launch/gazebo_world_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.547s] copying launch/bringup_simulation_simple_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.548s] copying launch/bringup_simulation_multi_launch.py -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/launch
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config
+[1.548s] copying config/puzzlebot_jetson_ed.yaml -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config
+[1.548s] copying config/puzzlebot_hacker_ed.yaml -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config
+[1.548s] copying config/puzzlebot_jetson_lidar_ed.yaml -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/config
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/rviz
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv
+[1.548s] copying models/aruco002_cv/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv
+[1.548s] copying models/aruco002_cv/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv/meshes
+[1.548s] copying models/aruco002_cv/meshes/aruco002.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv/meshes
+[1.548s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv/materials
+[1.549s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv/materials/textures
+[1.549s] copying models/aruco002_cv/materials/textures/4x4_50_002.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002_cv/materials/textures
+[1.549s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera
+[1.549s] copying models/puzzlebot_camera/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera
+[1.549s] copying models/puzzlebot_camera/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera
+[1.549s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera/meshes
+[1.549s] copying models/puzzlebot_camera/meshes/chassis1.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera/meshes
+[1.571s] copying models/puzzlebot_camera/meshes/wheel.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_camera/meshes
+[1.572s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_model
+[1.572s] copying models/office_model/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_model
+[1.572s] copying models/office_model/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_model
+[1.572s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/blue_colored_box
+[1.573s] copying models/blue_colored_box/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/blue_colored_box
+[1.573s] copying models/blue_colored_box/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/blue_colored_box
+[1.573s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv
+[1.573s] copying models/aruco003_cv/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv
+[1.573s] copying models/aruco003_cv/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv
+[1.573s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv/meshes
+[1.573s] copying models/aruco003_cv/meshes/aruco003.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv/meshes
+[1.573s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv/materials
+[1.573s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv/materials/textures
+[1.573s] copying models/aruco003_cv/materials/textures/4x4_50_003.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003_cv/materials/textures
+[1.573s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4
+[1.574s] copying models/goal_marker_4/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4
+[1.574s] copying models/goal_marker_4/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4/materials
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4/materials/textures
+[1.574s] copying models/goal_marker_4/materials/textures/mcr2_goal_4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_4/materials/textures
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/yellow_colored_box
+[1.574s] copying models/yellow_colored_box/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/yellow_colored_box
+[1.574s] copying models/yellow_colored_box/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/yellow_colored_box
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2
+[1.574s] copying models/aruco_marker_2/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2
+[1.574s] copying models/aruco_marker_2/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2/materials
+[1.574s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2/materials/textures
+[1.575s] copying models/aruco_marker_2/materials/textures/marker2.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_2/materials/textures
+[1.575s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3
+[1.575s] copying models/goal_marker_3/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3
+[1.575s] copying models/goal_marker_3/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3
+[1.575s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3/materials
+[1.575s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3/materials/textures
+[1.575s] copying models/goal_marker_3/materials/textures/mcr2_goal_3.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_3/materials/textures
+[1.575s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1
+[1.575s] copying models/aruco_marker_1/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1
+[1.575s] copying models/aruco_marker_1/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1
+[1.575s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1/materials
+[1.576s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1/materials/textures
+[1.576s] copying models/aruco_marker_1/materials/textures/marker1.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_1/materials/textures
+[1.576s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor
+[1.576s] copying models/office_floor/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor
+[1.576s] copying models/office_floor/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor
+[1.576s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor/materials
+[1.576s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor/materials/textures
+[1.576s] copying models/office_floor/materials/textures/puzzlebot_wood_7.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/office_floor/materials/textures
+[1.578s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0
+[1.578s] copying models/aruco_marker_0/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0
+[1.578s] copying models/aruco_marker_0/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0
+[1.579s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0/materials
+[1.579s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0/materials/textures
+[1.579s] copying models/aruco_marker_0/materials/textures/marker0.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_0/materials/textures
+[1.579s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base
+[1.579s] copying models/puzzlebot_base/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base
+[1.579s] copying models/puzzlebot_base/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base
+[1.579s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base/materials
+[1.579s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base/materials/textures
+[1.579s] copying models/puzzlebot_base/materials/textures/puzzlebot_wood_6.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_base/materials/textures
+[1.580s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box
+[1.580s] copying models/aruco_box/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box
+[1.580s] copying models/aruco_box/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box
+[1.581s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials
+[1.581s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker1.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker2.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker3.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker0.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] copying models/aruco_box/materials/textures/marker5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_box/materials/textures
+[1.581s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/simple_light
+[1.581s] copying models/simple_light/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/simple_light
+[1.581s] copying models/simple_light/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/simple_light
+[1.582s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame
+[1.582s] copying models/arena_a_frame/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame
+[1.582s] copying models/arena_a_frame/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame
+[1.582s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame/meshes
+[1.582s] copying models/arena_a_frame/meshes/MCR2_arena_side.stl -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame/meshes
+[1.582s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame/materials
+[1.582s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame/materials/textures
+[1.582s] copying models/arena_a_frame/materials/textures/mcr2_banner.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/arena_a_frame/materials/textures
+[1.582s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002
+[1.583s] copying models/aruco002/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002
+[1.583s] copying models/aruco002/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002
+[1.583s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002/meshes
+[1.583s] copying models/aruco002/meshes/aruco002.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002/meshes
+[1.583s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002/materials
+[1.583s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002/materials/textures
+[1.583s] copying models/aruco002/materials/textures/16h3_002.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco002/materials/textures
+[1.583s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/modulo3_world
+[1.583s] copying models/modulo3_world/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/modulo3_world
+[1.583s] copying models/modulo3_world/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/modulo3_world
+[1.583s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv
+[1.583s] copying models/aruco000_cv/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv
+[1.584s] copying models/aruco000_cv/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv/meshes
+[1.584s] copying models/aruco000_cv/meshes/aruco000.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv/meshes
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv/materials
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv/materials/textures
+[1.584s] copying models/aruco000_cv/materials/textures/4x4_50_000.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000_cv/materials/textures
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1
+[1.584s] copying models/goal_marker_1/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1
+[1.584s] copying models/goal_marker_1/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1/materials
+[1.584s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1/materials/textures
+[1.585s] copying models/goal_marker_1/materials/textures/mcr2_goal_1.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_1/materials/textures
+[1.585s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_3
+[1.585s] copying models/avoidance_world_3/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_3
+[1.585s] copying models/avoidance_world_3/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_3
+[1.585s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick
+[1.585s] copying models/box_brick/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick
+[1.585s] copying models/box_brick/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick
+[1.585s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick/meshes
+[1.585s] copying models/box_brick/meshes/box_brick.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick/meshes
+[1.585s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick/materials
+[1.585s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick/materials/textures
+[1.586s] copying models/box_brick/materials/textures/0032-512x512.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/box_brick/materials/textures
+[1.586s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar
+[1.586s] copying models/puzzlebot_lidar/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar
+[1.586s] copying models/puzzlebot_lidar/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar
+[1.586s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar/meshes
+[1.586s] copying models/puzzlebot_lidar/meshes/chassis1.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar/meshes
+[1.608s] copying models/puzzlebot_lidar/meshes/wheel.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_lidar/meshes
+[1.609s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_2
+[1.609s] copying models/avoidance_world_2/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_2
+[1.610s] copying models/avoidance_world_2/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_2
+[1.610s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_4
+[1.610s] copying models/avoidance_world_4/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_4
+[1.610s] copying models/avoidance_world_4/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_4
+[1.610s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_1
+[1.610s] copying models/avoidance_world_1/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_1
+[1.610s] copying models/avoidance_world_1/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/avoidance_world_1
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv
+[1.611s] copying models/aruco001_cv/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv
+[1.611s] copying models/aruco001_cv/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv/meshes
+[1.611s] copying models/aruco001_cv/meshes/aruco001.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv/meshes
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv/materials
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv/materials/textures
+[1.611s] copying models/aruco001_cv/materials/textures/4x4_50_001.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001_cv/materials/textures
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4
+[1.611s] copying models/aruco_marker_4/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4
+[1.611s] copying models/aruco_marker_4/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4/materials
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4/materials/textures
+[1.611s] copying models/aruco_marker_4/materials/textures/marker4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_4/materials/textures
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/red_colored_box
+[1.611s] copying models/red_colored_box/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/red_colored_box
+[1.611s] copying models/red_colored_box/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/red_colored_box
+[1.611s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003
+[1.612s] copying models/aruco003/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003
+[1.612s] copying models/aruco003/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003/meshes
+[1.612s] copying models/aruco003/meshes/aruco003.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003/meshes
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003/materials
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003/materials/textures
+[1.612s] copying models/aruco003/materials/textures/16h3_003.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco003/materials/textures
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials
+[1.612s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.612s] copying models/media/materials/textures/puzzlebot_wood_7.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.614s] copying models/media/materials/textures/nvidia_logo_black.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.614s] copying models/media/materials/textures/puzzlebot_wood_4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.618s] copying models/media/materials/textures/nvidia_hz_logo_white.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.618s] copying models/media/materials/textures/mcr2_logo_black.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.618s] copying models/media/materials/textures/mcr2_goal_5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.618s] copying models/media/materials/textures/mcr2_goal_3.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.619s] copying models/media/materials/textures/puzzlebot_logo.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.619s] copying models/media/materials/textures/puzzlebot_logo_white.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.619s] copying models/media/materials/textures/mcr2_banner.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.619s] copying models/media/materials/textures/mcr2_goal_1.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.619s] copying models/media/materials/textures/puzzlebot_wood_5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.622s] copying models/media/materials/textures/mcr2_goal_2.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.623s] copying models/media/materials/textures/wood_floor.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.623s] copying models/media/materials/textures/puzzlebot_wood_6.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.624s] copying models/media/materials/textures/nvidia_logo_white.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.625s] copying models/media/materials/textures/mcr2_logo_white.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.625s] copying models/media/materials/textures/nvidia_logo_b_w.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.625s] copying models/media/materials/textures/mcr2_goal_4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures
+[1.625s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.625s] copying models/media/materials/textures/aruco_markers/marker1.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.625s] copying models/media/materials/textures/aruco_markers/marker2.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.625s] copying models/media/materials/textures/aruco_markers/marker3.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.625s] copying models/media/materials/textures/aruco_markers/marker4.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.626s] copying models/media/materials/textures/aruco_markers/marker0.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.626s] copying models/media/materials/textures/aruco_markers/marker5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/textures/aruco_markers
+[1.626s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/scripts
+[1.626s] copying models/media/materials/scripts/mcr2_materials.material -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/media/materials/scripts
+[1.626s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5
+[1.626s] copying models/aruco_marker_5/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5
+[1.627s] copying models/aruco_marker_5/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5/materials
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5/materials/textures
+[1.627s] copying models/aruco_marker_5/materials/textures/marker5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_5/materials/textures
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2
+[1.627s] copying models/goal_marker_2/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2
+[1.627s] copying models/goal_marker_2/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2/materials
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2/materials/textures
+[1.627s] copying models/goal_marker_2/materials/textures/mcr2_goal_2.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_2/materials/textures
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/empty
+[1.627s] copying models/empty/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/empty
+[1.627s] copying models/empty/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/empty
+[1.627s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall
+[1.627s] copying models/world_wall/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall
+[1.627s] copying models/world_wall/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall
+[1.628s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/meshes
+[1.628s] copying models/world_wall/meshes/0032-512x512.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/meshes
+[1.628s] copying models/world_wall/meshes/wood_floor.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/meshes
+[1.628s] copying models/world_wall/meshes/world_wall1.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/meshes
+[1.628s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/materials
+[1.628s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/materials/textures
+[1.628s] copying models/world_wall/materials/textures/MapAll.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/materials/textures
+[1.629s] copying models/world_wall/materials/textures/0032-512x512.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/materials/textures
+[1.629s] copying models/world_wall/materials/textures/wood_floor.jpg -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/world_wall/materials/textures
+[1.630s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track
+[1.630s] copying models/puzzlebot_track/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track
+[1.630s] copying models/puzzlebot_track/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track
+[1.630s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track/materials
+[1.630s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track/materials/textures
+[1.630s] copying models/puzzlebot_track/materials/textures/puzzlebot_track.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot_track/materials/textures
+[1.630s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/plugins
+[1.630s] copying models/plugins/libDiffDynamicPlugin.so -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/plugins
+[1.633s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3
+[1.633s] copying models/aruco_marker_3/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3
+[1.633s] copying models/aruco_marker_3/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3
+[1.633s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3/materials
+[1.633s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3/materials/textures
+[1.633s] copying models/aruco_marker_3/materials/textures/marker3.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco_marker_3/materials/textures
+[1.633s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001
+[1.634s] copying models/aruco001/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001
+[1.634s] copying models/aruco001/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001
+[1.634s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001/meshes
+[1.634s] copying models/aruco001/meshes/aruco001.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001/meshes
+[1.634s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001/materials
+[1.634s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001/materials/textures
+[1.634s] copying models/aruco001/materials/textures/16h3_001.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco001/materials/textures
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000
+[1.635s] copying models/aruco000/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000
+[1.635s] copying models/aruco000/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000/meshes
+[1.635s] copying models/aruco000/meshes/aruco000.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000/meshes
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000/materials
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000/materials/textures
+[1.635s] copying models/aruco000/materials/textures/16h3_000.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/aruco000/materials/textures
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot
+[1.635s] copying models/puzzlebot/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot
+[1.635s] copying models/puzzlebot/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot
+[1.635s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.635s] copying models/puzzlebot/meshes/chassis1.blend1 -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.660s] copying models/puzzlebot/meshes/chassis.stl -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.676s] copying models/puzzlebot/meshes/chassis1.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.698s] copying models/puzzlebot/meshes/box5_8.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.699s] copying models/puzzlebot/meshes/world_wall1.blend1 -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.700s] copying models/puzzlebot/meshes/box1-5.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.701s] copying models/puzzlebot/meshes/box5_8.blend1 -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.702s] copying models/puzzlebot/meshes/wheel.stl -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.702s] copying models/puzzlebot/meshes/world_wall1.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.704s] copying models/puzzlebot/meshes/camera.stl -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.706s] copying models/puzzlebot/meshes/box1_4.blend1 -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.707s] copying models/puzzlebot/meshes/box9_12.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.709s] copying models/puzzlebot/meshes/wheel.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.711s] copying models/puzzlebot/meshes/wheel.blend1 -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.713s] copying models/puzzlebot/meshes/chassis1.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.737s] copying models/puzzlebot/meshes/box13_16.blend -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.738s] copying models/puzzlebot/meshes/wheel.dae -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/puzzlebot/meshes
+[1.739s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5
+[1.739s] copying models/goal_marker_5/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5
+[1.740s] copying models/goal_marker_5/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5
+[1.740s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5/materials
+[1.740s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5/materials/textures
+[1.740s] copying models/goal_marker_5/materials/textures/mcr2_goal_5.png -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/models/goal_marker_5/materials/textures
+[1.740s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/puzzlebot_arena.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/obstacle_avoidance_1.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/world_aruco_cv.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/world_box.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/empty.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.740s] copying worlds/world_empty.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/office.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/world_aruco_mip.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/puzzlebot_track.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/act3_4.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/obstacle_avoidance_4.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/obstacle_avoidance_3.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/puzzlebot_aruco_markers.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.741s] copying worlds/puzzlebot_arena_markers.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.742s] copying worlds/puzzlebot_world.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.742s] copying worlds/obstacle_avoidance_2.world -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds
+[1.742s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds/office_2
+[1.742s] copying worlds/office_2/model.sdf -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds/office_2
+[1.742s] copying worlds/office_2/model.config -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/worlds/office_2
+[1.742s] creating /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/plugins
+[1.742s] copying plugins/libDiffDynamicPlugin.so -> /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/share/puzzlebot_gazebo/plugins
+[1.744s] running install_egg_info
+[1.747s] Copying ../../build/puzzlebot_gazebo/puzzlebot_gazebo.egg-info to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages/puzzlebot_gazebo-0.0.0-py3.10.egg-info
+[1.748s] running install_scripts
+[1.769s] Installing puzzlebot_gazebo script to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/puzzlebot_gazebo
+[1.769s] writing list of installed files to '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log'
+[1.821s] Invoked command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Gazebo Simulator/puzzlebot_gazebo' returned '0': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_gazebo build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_gazebo/install.log --single-version-externally-managed install_data

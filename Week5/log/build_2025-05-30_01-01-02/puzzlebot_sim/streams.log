@@ -1,0 +1,22 @@
+[1.122s] Invoking command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Activities/puzzlebot_sim': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_sim build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/install.log --single-version-externally-managed install_data
+[1.338s] running egg_info
+[1.339s] writing ../../build/puzzlebot_sim/puzzlebot_sim.egg-info/PKG-INFO
+[1.339s] writing dependency_links to ../../build/puzzlebot_sim/puzzlebot_sim.egg-info/dependency_links.txt
+[1.340s] writing entry points to ../../build/puzzlebot_sim/puzzlebot_sim.egg-info/entry_points.txt
+[1.340s] writing requirements to ../../build/puzzlebot_sim/puzzlebot_sim.egg-info/requires.txt
+[1.340s] writing top-level names to ../../build/puzzlebot_sim/puzzlebot_sim.egg-info/top_level.txt
+[1.341s] reading manifest file '../../build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[1.342s] adding license file 'LICENSE'
+[1.342s] writing manifest file '../../build/puzzlebot_sim/puzzlebot_sim.egg-info/SOURCES.txt'
+[1.343s] running build
+[1.343s] running build_py
+[1.343s] running install
+[1.343s] running install_lib
+[1.344s] running install_data
+[1.344s] running install_egg_info
+[1.346s] removing '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[1.346s] Copying ../../build/puzzlebot_sim/puzzlebot_sim.egg-info to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_sim/lib/python3.10/site-packages/puzzlebot_sim-0.0.0-py3.10.egg-info
+[1.347s] running install_scripts
+[1.366s] Installing puzzlebot_sim script to /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_sim/lib/puzzlebot_sim
+[1.366s] writing list of installed files to '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/install.log'
+[1.410s] Invoked command in '/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/Activities/puzzlebot_sim' returned '0': PYTHONPATH=/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/install/puzzlebot_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot_sim build --build-base /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/build install --record /home/alexl/test/TE3003B_Integration_of_Robotics_and_Intelligent_Systems_2025/Week5/build/puzzlebot_sim/install.log --single-version-externally-managed install_data
