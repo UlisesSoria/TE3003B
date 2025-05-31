@@ -26,6 +26,8 @@ meshes/meshes_old/MCR2_puzzlebot_base.stl
 meshes/meshes_old/MCR2_puzzlebot_jetson_base.stl
 meshes/meshes_old/MCR2_puzzlebot_jetson_lidar_base.stl
 meshes/meshes_old/MCR2_wheel.stl
+models/modulo3_world/model.config
+models/modulo3_world/model.sdf
 plugins/libDiffDynamicPlugin.so
 puzzlebot/__init__.py
 puzzlebot/aruco_detection.py
