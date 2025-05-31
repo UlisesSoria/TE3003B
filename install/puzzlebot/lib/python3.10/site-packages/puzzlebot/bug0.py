@@ -33,16 +33,18 @@ class Bug0(Node):
 
         self.goal_x = 0.0
         self.goal_y = 0.0
+
+        #self.msg = Bool()
+        #self.msg.data = True
         
         # Parámetros de control
         self.min_obstacle_distance = 0.67  # Distancia mínima para considerar un obstáculo
         self.start_fw_distance = 0.46  # Distancia para iniciar el seguimiento de paredes
-        self.fw_distance = 0.2  # Distancia deseada a la pared
+        self.fw_distance = 0.22  # Distancia deseada a la pared
         self.v_max = 0.5  # Velocidad lineal máxima
-        self.w_max = 1.3  # Velocidad angular máxima
+        self.w_max = 1.32  # Velocidad angular máxima
         self.kw1 = 2.0  # Ganancia para el control de orientación
-        self.kw2 = 3.0  # Ganancia para el control de proximidad
-
+        self.kw2 = 2.6  # Ganancia para el control de proximidad
         self.robot_vel = Twist()
 
         # Configurar manejo de Ctrl+C

@@ -4,6 +4,10 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from ament_index_python.packages import get_package_share_directory
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     package_name = 'puzzlebot'
@@ -47,7 +51,17 @@ def generate_launch_description():
         ],
         arguments=[urdf_path],
     )
-    
+    """
+    bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([
+                FindPackageShare("puzzlebot_gazebo"),
+                "launch",
+                "bringup_simulation_simple_launch.py"
+            ])
+        )
+    )
+    """
     localisation_node = Node(
         package='puzzlebot',
         executable='localisation',
@@ -104,6 +118,7 @@ def generate_launch_description():
     return LaunchDescription([
         use_sim_time,
         algorithm_arg,
+        #bringup_launch,
         localisation_node,
         navigation_node,  # Nodo de navegación condicional
         #rqt_graph,
