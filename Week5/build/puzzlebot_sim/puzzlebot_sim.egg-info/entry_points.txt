@@ -1,3 +1,0 @@
-[console_scripts]
-puzzlebot_sim = puzzlebot_sim.puzzlebot_sim:main
-

@@ -1,0 +1,11 @@
+[console_scripts]
+aruco = puzzlebot.aruco:main
+bug0 = puzzlebot.bug0:main
+bug2 = puzzlebot.bug2:main
+joint_state_pub = puzzlebot.joint_state_pub:main
+localisation = puzzlebot.localisation:main
+localisatonv2 = puzzlebot.localisationv2:main
+pose_estimation = puzzlebot.pose_estimation:main
+publish_odom = puzzlebot.publish_odom:main
+puzzlebot_kinematic_model = puzzlebot.puzzlebot_kinematic_model:main
+

@@ -1,5 +1,0 @@
-  File "/home/ulisess/TE3003B/minichallenges/TE3003B/install/puzzlebot/lib/python3.10/site-packages/puzzlebot/bug2.py", line 261
-    speed = self.v_max * max(0.1, min(1.0, 
-                            ^
-SyntaxError: '(' was never closed
-

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "puzzlebot_aruco_msgs__py",
+		"source" : "/home/alexl/final_ws/build/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs__py"
+	}
+}

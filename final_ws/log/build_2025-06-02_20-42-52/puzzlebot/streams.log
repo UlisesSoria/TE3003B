@@ -1,0 +1,30 @@
+[1.878s] Invoking command in '/home/alexl/final_ws/src/puzzlebot': PYTHONPATH=/home/alexl/final_ws/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot build --build-base /home/alexl/final_ws/build/puzzlebot/build install --record /home/alexl/final_ws/build/puzzlebot/install.log --single-version-externally-managed install_data
+[2.409s] running egg_info
+[2.412s] writing ../../build/puzzlebot/puzzlebot.egg-info/PKG-INFO
+[2.412s] writing dependency_links to ../../build/puzzlebot/puzzlebot.egg-info/dependency_links.txt
+[2.413s] writing entry points to ../../build/puzzlebot/puzzlebot.egg-info/entry_points.txt
+[2.413s] writing requirements to ../../build/puzzlebot/puzzlebot.egg-info/requires.txt
+[2.413s] writing top-level names to ../../build/puzzlebot/puzzlebot.egg-info/top_level.txt
+[2.419s] reading manifest file '../../build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[2.423s] writing manifest file '../../build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[2.423s] running build
+[2.423s] running build_py
+[2.424s] running install
+[2.425s] running install_lib
+[2.429s] running install_data
+[2.430s] copying launch/main_launch.py -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/launch
+[2.435s] running install_egg_info
+[2.441s] removing '/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info' (and everything under it)
+[2.441s] Copying ../../build/puzzlebot/puzzlebot.egg-info to /home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info
+[2.451s] running install_scripts
+[2.492s] Installing aruco script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.492s] Installing bug0 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing bug2 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing joint_state_pub script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing localisation script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing localisatonv2 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing pose_estimation script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing publish_odom script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.499s] Installing puzzlebot_kinematic_model script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[2.500s] writing list of installed files to '/home/alexl/final_ws/build/puzzlebot/install.log'
+[2.618s] Invoked command in '/home/alexl/final_ws/src/puzzlebot' returned '0': PYTHONPATH=/home/alexl/final_ws/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot build --build-base /home/alexl/final_ws/build/puzzlebot/build install --record /home/alexl/final_ws/build/puzzlebot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+{
+  "package_name": "puzzlebot_aruco_msgs",
+  "non_idl_tuples": [
+    "/home/alexl/final_ws/src/puzzlebot_aruco_msgs:msg/ArucoObservation.msg"
+  ]
+}

@@ -1,0 +1,8 @@
+setup.py
+puzzlebot_aruco_msgs/__init__.py
+puzzlebot_aruco_msgs.egg-info/PKG-INFO
+puzzlebot_aruco_msgs.egg-info/SOURCES.txt
+puzzlebot_aruco_msgs.egg-info/dependency_links.txt
+puzzlebot_aruco_msgs.egg-info/top_level.txt
+puzzlebot_aruco_msgs/msg/__init__.py
+puzzlebot_aruco_msgs/msg/_aruco_observation.py

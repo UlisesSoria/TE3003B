@@ -1,0 +1,55 @@
+[0.662s] Invoking command in '/home/alexl/final_ws/src/puzzlebot': PYTHONPATH=/home/alexl/final_ws/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot build --build-base /home/alexl/final_ws/build/puzzlebot/build install --record /home/alexl/final_ws/build/puzzlebot/install.log --single-version-externally-managed install_data
+[0.886s] running egg_info
+[0.887s] writing ../../build/puzzlebot/puzzlebot.egg-info/PKG-INFO
+[0.887s] writing dependency_links to ../../build/puzzlebot/puzzlebot.egg-info/dependency_links.txt
+[0.887s] writing entry points to ../../build/puzzlebot/puzzlebot.egg-info/entry_points.txt
+[0.888s] writing requirements to ../../build/puzzlebot/puzzlebot.egg-info/requires.txt
+[0.888s] writing top-level names to ../../build/puzzlebot/puzzlebot.egg-info/top_level.txt
+[0.890s] reading manifest file '../../build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[0.891s] writing manifest file '../../build/puzzlebot/puzzlebot.egg-info/SOURCES.txt'
+[0.891s] running build
+[0.891s] running build_py
+[0.891s] running install
+[0.892s] running install_lib
+[0.893s] running install_data
+[0.893s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/launch
+[0.893s] copying launch/main_launch.py -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/launch
+[0.894s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/config
+[0.894s] copying config/puzzlebot_jetson_ed.yaml -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/config
+[0.894s] copying config/puzzlebot_hacker_ed.yaml -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/config
+[0.894s] copying config/puzzlebot_jetson_lidar_ed.yaml -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/config
+[0.895s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/rviz
+[0.895s] copying rviz/odometry_puzzlebot_rviz.rviz -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/rviz
+[0.895s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/urdf
+[0.895s] copying urdf/puzzlebot.urdf -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/urdf
+[0.895s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes
+[0.895s] copying meshes/Puzzlebot_Wheel.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes
+[0.896s] copying meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes
+[0.897s] copying meshes/Puzzlebot_Caster_Wheel.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes
+[0.897s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.897s] copying meshes/meshes_old/MCR2_puzzlebot_jetson_base.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.898s] copying meshes/meshes_old/MCR2_wheel.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.899s] copying meshes/meshes_old/MCR2_puzzlebot_jetson_lidar_base.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.900s] copying meshes/meshes_old/MCR2_caster_wheel.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.901s] copying meshes/meshes_old/MCR2_puzzlebot_base.stl -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/meshes/meshes_old
+[0.901s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/models
+[0.901s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/models/modulo3_world
+[0.901s] copying models/modulo3_world/model.sdf -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/models/modulo3_world
+[0.902s] copying models/modulo3_world/model.config -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/models/modulo3_world
+[0.902s] creating /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/plugins
+[0.902s] copying plugins/libDiffDynamicPlugin.so -> /home/alexl/final_ws/install/puzzlebot/share/puzzlebot/plugins
+[0.905s] running install_egg_info
+[0.907s] removing '/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.907s] Copying ../../build/puzzlebot/puzzlebot.egg-info to /home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages/puzzlebot-0.0.0-py3.10.egg-info
+[0.908s] running install_scripts
+[0.926s] Installing aruco script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.926s] Installing bug0 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing bug2 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing joint_state_pub script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing localisation script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing localisatonv2 script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing pose_estimation script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.927s] Installing publish_odom script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.928s] Installing puzzlebot_kinematic_model script to /home/alexl/final_ws/install/puzzlebot/lib/puzzlebot
+[0.928s] writing list of installed files to '/home/alexl/final_ws/build/puzzlebot/install.log'
+[0.958s] Invoked command in '/home/alexl/final_ws/src/puzzlebot' returned '0': PYTHONPATH=/home/alexl/final_ws/build/puzzlebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alexl/final_ws/install/puzzlebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/puzzlebot build --build-base /home/alexl/final_ws/build/puzzlebot/build install --record /home/alexl/final_ws/build/puzzlebot/install.log --single-version-externally-managed install_data

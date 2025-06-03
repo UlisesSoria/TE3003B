@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c76a7773ffdc65390b01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "puzzlebot_aruco_msgs__py",
+					"jsonFile" : "directory-puzzlebot_aruco_msgs__py-5a2e634c74f9a23037c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/alexl/final_ws/build/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "puzzlebot_aruco_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_puzzlebot_aruco_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_puzzlebot_aruco_msgs_egg-772a34a300b409abec4b.json",
+					"name" : "ament_cmake_python_build_puzzlebot_aruco_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_puzzlebot_aruco_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_puzzlebot_aruco_msgs-be073fbcebdca6bc1977.json",
+					"name" : "ament_cmake_python_copy_puzzlebot_aruco_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs-1ee4d735b35105deb29a.json",
+					"name" : "puzzlebot_aruco_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__cpp-9320498449928cd84b1a.json",
+					"name" : "puzzlebot_aruco_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "puzzlebot_aruco_msgs__py::@6ebcb215eed57f21ace2",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__py-b14756ad9e697c58da4a.json",
+					"name" : "puzzlebot_aruco_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_generator_c-934653fc88ae0186ae46.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_generator_py-8dddbf60e0316e439435.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_c-1b2bf52dbeca933bead9.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_c__pyext-48ccb45dbeb9508b4d45.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_cpp-73682abe84d98f53c878.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c-d7620a1785ae58054d16.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c__pyext-d920ac8ad3b0d2567241.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cpp-b0e8e7ea54fd4673436d.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c-a5d961c6c8b8a27f30eb.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c__pyext-a65e8f234a2cb5c6a9e9.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cpp-64be8d702885cd72ed2d.json",
+					"name" : "puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlebot_aruco_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlebot_aruco_msgs_uninstall-0cd4eb9218d4103b0e18.json",
+					"name" : "puzzlebot_aruco_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0e6229b7280966e6e961.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alexl/final_ws/build/puzzlebot_aruco_msgs",
+		"source" : "/home/alexl/final_ws/src/puzzlebot_aruco_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

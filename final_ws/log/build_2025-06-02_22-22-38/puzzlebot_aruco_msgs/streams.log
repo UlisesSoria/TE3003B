@@ -1,0 +1,144 @@
+[1.106s] Invoking command in '/home/alexl/final_ws/build/puzzlebot_aruco_msgs': CMAKE_PREFIX_PATH=/home/alexl/ros2_ws/install/tf_examples:/home/alexl/ros2_ws/install/puzzlebot_sim:/home/alexl/ros2_ws/install/puzzlebot_gazebo:/home/alexl/ros2_ws/install/puzzlebot_description:/home/alexl/ros2_ws/install/puzzle_drone:/home/alexl/ros2_ws/install/motor_control:/home/alexl/ros2_ws/install/mobile_robotics:/home/alexl/ros2_ws/install/challenge:/home/alexl/TE3003B/install/puzzlebot:/home/alexl/ros2_ws/src/mobile_robotics/install/mobile_robotics:/opt/ros/humble /usr/bin/cmake --build /home/alexl/final_ws/build/puzzlebot_aruco_msgs -- -j12 -l12
+[1.423s] [  9%] Built target puzzlebot_aruco_msgs__rosidl_generator_c
+[1.561s] [  9%] Built target ament_cmake_python_copy_puzzlebot_aruco_msgs
+[1.613s] [ 19%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_c
+[2.245s] running egg_info
+[2.249s] writing puzzlebot_aruco_msgs.egg-info/PKG-INFO
+[2.249s] writing dependency_links to puzzlebot_aruco_msgs.egg-info/dependency_links.txt
+[2.249s] writing top-level names to puzzlebot_aruco_msgs.egg-info/top_level.txt
+[2.254s] reading manifest file 'puzzlebot_aruco_msgs.egg-info/SOURCES.txt'
+[2.255s] writing manifest file 'puzzlebot_aruco_msgs.egg-info/SOURCES.txt'
+[2.381s] [ 19%] Built target ament_cmake_python_build_puzzlebot_aruco_msgs_egg
+[2.432s] [ 29%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c
+[2.505s] [ 38%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c
+[2.552s] [ 41%] Built target puzzlebot_aruco_msgs__cpp
+[2.607s] [ 51%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cpp
+[2.669s] [ 61%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_cpp
+[2.714s] [ 70%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cpp
+[2.782s] [ 70%] Built target puzzlebot_aruco_msgs
+[2.853s] [ 74%] Built target puzzlebot_aruco_msgs__py
+[2.912s] [ 80%] Built target puzzlebot_aruco_msgs__rosidl_generator_py
+[2.967s] [ 87%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.025s] [ 93%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_c__pyext
+[3.079s] [100%] Built target puzzlebot_aruco_msgs__rosidl_typesupport_introspection_c__pyext
+[3.104s] Invoked command in '/home/alexl/final_ws/build/puzzlebot_aruco_msgs' returned '0': CMAKE_PREFIX_PATH=/home/alexl/ros2_ws/install/tf_examples:/home/alexl/ros2_ws/install/puzzlebot_sim:/home/alexl/ros2_ws/install/puzzlebot_gazebo:/home/alexl/ros2_ws/install/puzzlebot_description:/home/alexl/ros2_ws/install/puzzle_drone:/home/alexl/ros2_ws/install/motor_control:/home/alexl/ros2_ws/install/mobile_robotics:/home/alexl/ros2_ws/install/challenge:/home/alexl/TE3003B/install/puzzlebot:/home/alexl/ros2_ws/src/mobile_robotics/install/mobile_robotics:/opt/ros/humble /usr/bin/cmake --build /home/alexl/final_ws/build/puzzlebot_aruco_msgs -- -j12 -l12
+[3.135s] Invoking command in '/home/alexl/final_ws/build/puzzlebot_aruco_msgs': CMAKE_PREFIX_PATH=/home/alexl/ros2_ws/install/tf_examples:/home/alexl/ros2_ws/install/puzzlebot_sim:/home/alexl/ros2_ws/install/puzzlebot_gazebo:/home/alexl/ros2_ws/install/puzzlebot_description:/home/alexl/ros2_ws/install/puzzle_drone:/home/alexl/ros2_ws/install/motor_control:/home/alexl/ros2_ws/install/mobile_robotics:/home/alexl/ros2_ws/install/challenge:/home/alexl/TE3003B/install/puzzlebot:/home/alexl/ros2_ws/src/mobile_robotics/install/mobile_robotics:/opt/ros/humble /usr/bin/cmake --install /home/alexl/final_ws/build/puzzlebot_aruco_msgs
+[3.153s] -- Install configuration: ""
+[3.156s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/ament_index/resource_index/rosidl_interfaces/puzzlebot_aruco_msgs
+[3.157s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.157s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.157s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/aruco_observation.h
+[3.157s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.158s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__struct.h
+[3.158s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__functions.h
+[3.159s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__functions.c
+[3.159s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__type_support.h
+[3.159s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.160s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/library_path.sh
+[3.160s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/library_path.dsv
+[3.161s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_generator_c.so
+[3.162s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.162s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.162s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.162s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.162s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__rosidl_typesupport_fastrtps_c.h
+[3.164s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_c.so
+[3.165s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.165s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.165s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/aruco_observation.hpp
+[3.165s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.165s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.166s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__type_support.hpp
+[3.166s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__traits.hpp
+[3.166s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__struct.hpp
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__builder.hpp
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/dds_fastrtps
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__rosidl_typesupport_fastrtps_cpp.hpp
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.167s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__rosidl_typesupport_introspection_c.h
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__type_support.c
+[3.169s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_introspection_c.so
+[3.170s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_c.so
+[3.170s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs
+[3.170s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg
+[3.170s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail
+[3.171s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__rosidl_typesupport_introspection_cpp.hpp
+[3.171s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/include/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs/msg/detail/aruco_observation__type_support.cpp
+[3.171s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_introspection_cpp.so
+[3.175s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_typesupport_cpp.so
+[3.175s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/pythonpath.sh
+[3.175s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/pythonpath.dsv
+[3.175s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs-0.0.0-py3.10.egg-info
+[3.175s] -- Installing: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.175s] -- Installing: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.175s] -- Installing: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.176s] -- Installing: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/_puzzlebot_aruco_msgs_s.ep.rosidl_typesupport_c.c
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/_puzzlebot_aruco_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/__init__.py
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/libpuzzlebot_aruco_msgs__rosidl_generator_py.so
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/msg
+[3.176s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/msg/_aruco_observation.py
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/msg/__init__.py
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/msg/_aruco_observation_s.c
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/_puzzlebot_aruco_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.177s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.251s] Listing '/home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs'...
+[3.252s] Listing '/home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/msg'...
+[3.272s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.276s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.277s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/local/lib/python3.10/dist-packages/puzzlebot_aruco_msgs/puzzlebot_aruco_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.282s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/lib/libpuzzlebot_aruco_msgs__rosidl_generator_py.so
+[3.283s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/msg/ArucoObservation.idl
+[3.284s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/msg/ArucoObservation.msg
+[3.285s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/ament_index/resource_index/package_run_dependencies/puzzlebot_aruco_msgs
+[3.285s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/ament_index/resource_index/parent_prefix_path/puzzlebot_aruco_msgs
+[3.285s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/ament_prefix_path.sh
+[3.286s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/ament_prefix_path.dsv
+[3.286s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/path.sh
+[3.286s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/environment/path.dsv
+[3.286s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/local_setup.bash
+[3.286s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/local_setup.sh
+[3.287s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/local_setup.zsh
+[3.287s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/local_setup.dsv
+[3.287s] -- Installing: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/package.dsv
+[3.288s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/ament_index/resource_index/packages/puzzlebot_aruco_msgs
+[3.290s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_generator_cExport.cmake
+[3.291s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.291s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.291s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.292s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_generator_cppExport.cmake
+[3.293s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.293s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.294s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.295s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.295s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_cExport.cmake
+[3.295s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.297s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.297s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.297s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_cppExport.cmake
+[3.297s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.298s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_generator_pyExport.cmake
+[3.298s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/export_puzzlebot_aruco_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.298s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/rosidl_cmake-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.299s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.300s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgsConfig.cmake
+[3.300s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/cmake/puzzlebot_aruco_msgsConfig-version.cmake
+[3.300s] -- Up-to-date: /home/alexl/final_ws/install/puzzlebot_aruco_msgs/share/puzzlebot_aruco_msgs/package.xml
+[3.310s] Invoked command in '/home/alexl/final_ws/build/puzzlebot_aruco_msgs' returned '0': CMAKE_PREFIX_PATH=/home/alexl/ros2_ws/install/tf_examples:/home/alexl/ros2_ws/install/puzzlebot_sim:/home/alexl/ros2_ws/install/puzzlebot_gazebo:/home/alexl/ros2_ws/install/puzzlebot_description:/home/alexl/ros2_ws/install/puzzle_drone:/home/alexl/ros2_ws/install/motor_control:/home/alexl/ros2_ws/install/mobile_robotics:/home/alexl/ros2_ws/install/challenge:/home/alexl/TE3003B/install/puzzlebot:/home/alexl/ros2_ws/src/mobile_robotics/install/mobile_robotics:/opt/ros/humble /usr/bin/cmake --install /home/alexl/final_ws/build/puzzlebot_aruco_msgs

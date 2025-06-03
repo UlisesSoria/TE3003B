@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001591] (puzzlebot) JobQueued: {'identifier': 'puzzlebot', 'dependencies': OrderedDict()}
-[0.001726] (puzzlebot) JobStarted: {'identifier': 'puzzlebot'}
-[0.092734] (puzzlebot) JobEnded: {'identifier': 'puzzlebot', 'rc': 0}
-[0.094439] (-) EventReactorShutdown: {}
