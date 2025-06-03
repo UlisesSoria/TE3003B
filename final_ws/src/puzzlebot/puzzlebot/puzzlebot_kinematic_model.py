@@ -1,130 +1,61 @@
-import rclpy 
+import numpy as np
 
-from rclpy.node import Node 
+def get_puzzlebot_kinematic_model(r: float, l: float) -> np.ndarray:
+    """Get the kinematic model of the Puzzlebot robot to go from wheel speeds to robot velocities.
+    (v, w) = KinematicModel @ (wr, wl)
+    
+    Args:
+        r (float): The radius of the wheels.
+        l (float): The distance between the wheels.
+        
+    Returns:
+        np.ndarray: The kinematic model matrix of the Puzzlebot robot.
+    """
+    return np.array([[r/2, r/2],
+                   [r/l, -r/l]])
 
-from geometry_msgs.msg import Twist 
+def get_inverse_puzzlebot_kinematic_model(r: float, l: float) -> np.ndarray:
+    """Get the inverse kinematic model of the Puzzlebot robot to go from robot velocities to wheel speeds.
+    (wr, wl) = InverseKinematicModel @ (v, w)
+    
+    Args:
+        r (float): The radius of the wheels.
+        l (float): The distance between the wheels.
+    
+    Returns:
+        np.ndarray: The inverse kinematic model matrix of the Puzzlebot robot.
+    """
+    return np.linalg.inv(get_puzzlebot_kinematic_model(r, l))
 
-from std_msgs.msg import Float32 
+def get_linearized_puzzlebot_model_matrix(v: float, theta: float, delta_t: float) -> np.ndarray:
+    """Get the linearized model matrix of the Puzzlebot robot to go from the states to the next states.
+    
+    Args:
+        v (float): The linear velocity of the robot.
+        theta (float): The orientation angle of the robot.
+        delta_t (float): The time step for the model.
+    
+    Returns:    
+        np.ndarray: The linearized model matrix of the Puzzlebot robot.
+    """
+    return np.array([[1, 0, -v*np.sin(theta)*delta_t],
+                     [0, 1,  v*np.cos(theta)*delta_t],
+                     [0, 0,            1           ]])
 
-from rclpy import qos 
+def get_linearized_puzzlebot_input_model_matrix(r: float, l: float, theta: float, delta_t: float) -> np.ndarray:
+    """Get the linearized input model matrix of the Puzzlebot robot to go from the inputs to the change produced by the inputs.
+    
+    Args:
+        r (float): The radius of the wheels.
+        l (float): The distance between the wheels.
+        theta (float): The orientation angle of the robot.
+        delta_t (float): The time step for the model.
+    
+    Returns:
+        np.ndarray: The linearized input model matrix of the Puzzlebot robot.
+    """
+    return (1/2*r*delta_t) * np.array([[np.cos(theta), np.cos(theta)],
+                                        [np.sin(theta), np.sin(theta)],
+                                        [     2/l,          -2/l     ]])
 
-import numpy as np 
-
-import transforms3d 
-
- 
-
-class KinematicModelNode(Node): 
-
-    def __init__(self): 
-
-        super().__init__('kinematic_model_node') 
-
-        # Create a subscriber to the /cmd_vel topic 
-
-        self.cmd_vel_subscriber = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10) 
-
-        # Create a publisher for the right and left wheel velocities 
-
-        self.wr_pub = self.create_publisher(Float32,'wr',qos.qos_profile_sensor_data) 
-
-        self.wl_pub = self.create_publisher(Float32,'wl',qos.qos_profile_sensor_data) 
-      
-
-         ############ ROBOT CONSTANTS ################  
-
-        self.r=0.05 #puzzlebot wheel radius [m] 
-
-        self.L = 0.19 #puzzlebot wheel separation [m] 
-
-
-        ############ Variables ############### 
-
-        self.w = 0.0 # robot's angular speed [rad/s] 
-
-        self.v = 0.0 #robot's linear speed [m/s] 
-
-        self.wr_msg = Float32() #Ros message to publish the right wheel speed 
-
-        self.wl_msg = Float32() #Ros message to publish the left wheel speed 
-         
-        timer_period = 0.02 # Desired time to update the robot's pose [s] 
-
-        # Create a timer to publish the wheel speeds 
-
-        self.timer = self.create_timer(timer_period, self.timer_callback) 
-
-        # WRITE YOUR CODE HERE 
-
-
-    def timer_callback(self): 
-
-        # Get the wheel speeds based on the linear and angular velocities
-        wr, wl = self.get_wheel_speeds()
-
-        # Create messages for the right and left wheel speeds
-        self.wr_msg.data = wr
-        self.wl_msg.data = wl
-
-        # Publish the wheel speeds
-        self.wr_pub.publish(self.wr_msg)
-        self.wl_pub.publish(self.wl_msg)
-
-     
-
-    def cmd_vel_callback(self, msg): 
-
-        # Get the linear and angular velocities from the message 
-
-        self.v = msg.linear.x 
-        self.get_logger().info('v: %f' % self.v)
-
-        self.w = msg.angular.z 
-        self.get_logger().info('v: %f' % self.v)
- 
-
-    def get_wheel_speeds(self): 
-
-        # Calculate the wheel speeds based on the linear and angular velocities 
-
-        wr = 0.0 
-
-        wl = 0.0 
-
-        wr = (2*self.v + self.w*self.L)/(2*self.r)
-
-        wl = (2*self.v - self.w*self.L)/(2*self.r)
-
-        return wr, wl 
-
- 
-
- 
-
-def main(args=None): 
-
-    rclpy.init(args=args) 
-
-    node = KinematicModelNode() 
-
-    try: 
-
-        rclpy.spin(node) 
-
-    except KeyboardInterrupt: 
-
-        pass 
-
-    finally: 
-
-        if rclpy.ok():  # Ensure shutdown is only called once 
-
-            rclpy.shutdown() 
-
-        node.destroy_node() 
-
- 
-
-if __name__ == '__main__': 
-
-    main() 
+speeds_decomposer = lambda v, w, theta: np.array([v * np.cos(theta), v * np.sin(theta), w])

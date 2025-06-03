@@ -45,11 +45,8 @@ class PuzzlebotAruco(Node):
 
         self.bridge = CvBridge()
         self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-
-        if self.ros_distro == 'humble':
-            self.parameters = cv2.aruco.DetectorParameters_create()
-        elif self.ros_distro == 'jazzy':
-            self.parameters = cv2.aruco.DetectorParameters()
+        self.parameters = cv2.aruco.DetectorParameters()
+        if self.ros_distro == 'jazzy':
             self.detector = cv2.aruco.ArucoDetector(self.aruco_dict, self.parameters)
 
         self.get_logger().info("Puzzlebot Aruco Node has started")
@@ -89,7 +86,7 @@ class PuzzlebotAruco(Node):
                 try:
                     transformed_point = self.tf_buffer.transform(
                         marker_point,
-                        f'{self.namespace}base_footprint',
+                        'base_footprint',
                         timeout=rclpy.duration.Duration(seconds=1.0)
                     )
 
@@ -105,6 +102,7 @@ class PuzzlebotAruco(Node):
                     msg_obs.id = int(aruco_id)
                     msg_obs.distance = distance
                     msg_obs.angle = angle
+                    self.get_logger().info(f"Detected Aruco ID: {aruco_id}, Distance: {distance:.2f} m, Angle: {angle:.2f} rad")
                     self.aruco_observation_publisher.publish(msg_obs)
 
                 except Exception as e:

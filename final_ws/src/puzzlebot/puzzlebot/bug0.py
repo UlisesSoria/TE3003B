@@ -25,7 +25,7 @@ class Bug0(Node):
         self_goal_sub = self.create_subscription(Odometry, 'goal', self.isGoal_callback, 10)
 
         # Variables de estado
-        self.position = [0.2, 0.2]  # Posición (x, y)
+        self.position = [-1.2, 1.2]  # Posición (x, y)
         self.yaw = 0.0  # Orientación inicial (en radianes)
         self.goal = None
         self.obstacle_detected = False
@@ -217,7 +217,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     controller = Bug0()
-    controller.set_goal(2.0, 2.0)  # Establece el objetivo
+    controller.set_goal(1.2, -1.48)  # Establece el objetivo
 
     try:
         rclpy.spin(controller)

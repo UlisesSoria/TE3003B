@@ -8,6 +8,7 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     package_name = 'puzzlebot'
@@ -25,12 +26,7 @@ def generate_launch_description():
     with open(urdf_path, 'r') as urdf_file:
         robot_desc = urdf_file.read()
 
-    # Argumentos de lanzamiento
-    use_sim_time = DeclareLaunchArgument(
-        'use_sim_time', 
-        default_value='false', 
-        description='Use sim time if true'
-    )
+    launch_use_sim_time = LaunchConfiguration('use_sim_time')
     
     algorithm_arg = DeclareLaunchArgument(
         'algorithm',
@@ -46,8 +42,8 @@ def generate_launch_description():
         name='robot_state_publisher',
         output='screen',
         parameters=[
-            {'use_sim_time': LaunchConfiguration('use_sim_time')},
-            {'robot_description': robot_desc}
+            {   'use_sim_time': True,
+                'robot_description': robot_desc}
         ],
         arguments=[urdf_path],
     )
@@ -67,6 +63,7 @@ def generate_launch_description():
         executable='localisation',
         name='localisation',
         output='screen',
+        parameters=[{'use_sim_time': True,}],
     )
     
     kinematic_model_node = Node(
@@ -80,7 +77,8 @@ def generate_launch_description():
         package='puzzlebot',
         executable='joint_state_pub',
         name='joint_state_pub',
-        parameters=[{'x': 1.0, 'y': 0.0, 'z': 0.0}],
+        parameters=[{'use_sim_time': True,
+            'x': 1.0, 'y': 0.0, 'z': 0.0}],
         output='screen'
     )
     """
@@ -202,14 +200,15 @@ def generate_launch_description():
         package='puzzlebot',
         executable=LaunchConfiguration('algorithm'),  # Usa el argumento como nombre del ejecutable
         name=LaunchConfiguration('algorithm'),       # Usa el mismo nombre para el nodo
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': True}],
     )
     
 
     return LaunchDescription([
-        use_sim_time,
         algorithm_arg,
         #bringup_launch,
+        joint_state_publisher,
         localisation_node,
         navigation_node,
         aruco_node,
