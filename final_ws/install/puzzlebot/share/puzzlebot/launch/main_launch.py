@@ -150,7 +150,7 @@ def generate_launch_description():
         name='aruco_node',
     parameters=[{
         'use_sim_time': True,
-        'aruco_side_length': 0.15,
+        'aruco_side_length': 0.137,
         'camera_matrix': [528.43375656,     0.0     , 320.0,
                             0.0     , 528.43375656, 240.0,
                             0.0     ,     0.0     ,  1.0 ],
