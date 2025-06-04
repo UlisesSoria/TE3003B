@@ -1,179 +1,186 @@
-#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from tf2_ros import StaticTransformBroadcaster, TransformBroadcaster
-from geometry_msgs.msg import TransformStamped, Twist
-import transforms3d
+from tf2_ros import TransformBroadcaster, StaticTransformBroadcaster
+from geometry_msgs.msg import TransformStamped
+from sensor_msgs.msg import JointState
 from nav_msgs.msg import Odometry
+import transforms3d
 import numpy as np
+import rclpy.qos as qos
+from std_msgs.msg import Float32
 
-class PuzzlebotTFBroadcaster(Node):
+class JointStatePublisher(Node):
+
     def __init__(self):
-        super().__init__('joint_state_pub')
-
+        super().__init__('joint_state_publisher')
+        
         self.namespace = self.get_namespace().rstrip('/')
         
-        self.tf_br1 = StaticTransformBroadcaster(self)
-        self.tf_br2 = StaticTransformBroadcaster(self)
-        self.tf_br3 = StaticTransformBroadcaster(self)
-        self.tf_br4 = StaticTransformBroadcaster(self)
+        # Declare parameters
+        self.declare_parameter('initial_pose', [-1.2, 1.2, 0.0])
+        self.declare_parameter('odometry_frame', 'odom')
 
-        self.declare_parameter('frame', 'odom')
-
-        self.declare_parameter('x', 1.0)
-        self.declare_parameter('y', 0.0)
-        self.declare_parameter('z', 0.0)
-
-
-        self.odom_frame = self.get_parameter('frame').value
-        self.x = self.get_parameter('x').value
-        self.y = self.get_parameter('y').value
-        self.z = self.get_parameter('z').value
-
-        self.cmd_vel_subscriber = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10) 
+        # Configuration parameters
+        self.wheel_radius = 0.05  # Ensure this matches your robot's wheel radius
+        self.base_height = 0.05
+        
+        # Frames 
+        self.odomFrame = self.get_parameter('odometry_frame').get_parameter_value().string_value.strip('/')
+        
+        # Setup publishers and timers
+        self.joint_pub = self.create_publisher(JointState, 'joint_states', 10)
+        self.tf_static_broadcaster = StaticTransformBroadcaster(self)
         self.tf_broadcaster = TransformBroadcaster(self)
-        self.subscription = self.create_subscription(Odometry, 'odom', self.odom_callback, 10)
-
-        self.r = 0.05 #puzzlebot wheel radius [m] 
-        self.L = 0.19 #puzzlebot wheel separation [m] 
-
-        self.v = 0.0
-        self.w = 0.0
-
-        t = TransformStamped()
-        t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'map'
-        t.child_frame_id = self.odom_frame
-        t.transform.translation.x = 0.0
-        t.transform.translation.y = 0.0
-        t.transform.translation.z = 0.0
-        t.transform.rotation.x = 0.0
-        t.transform.rotation.y = 0.0
-        t.transform.rotation.z = 0.0
-        q = transforms3d.euler.euler2quat(0, 0, 0)      #input euler2quat(roll, pitch, yaw) , output q=[w, x, y, z] 
-        t.transform.rotation.x = q[1]
-        t.transform.rotation.y = q[2]
-        t.transform.rotation.z = q[3]
-        t.transform.rotation.w = q[0]
-
-
-        self.t2 = TransformStamped()
-        self.t3 = TransformStamped()
-        self.t4 = TransformStamped()
-        #Create a Timer
-        timer_period = 0.01 #seconds
-        self.timer = self.create_timer(timer_period, self.timer_cb)
-        #Variables to be used
-        self.start_time = self.get_clock().now()
+        self.publish_static_transforms()
+        self.create_timer(0.002, self.timer_callback)
         
-        self.tf_br1.sendTransform(t)
-
-    def cmd_vel_callback(self, msg):
-        self.w = msg.angular.z 
-        self.v = msg.linear.x
-
-    def timer_cb(self):
+        # Subscribers
+        self.odom_sub = self.create_subscription(
+            Odometry,
+            'ground_truth',
+            self.odom_callback,
+            qos.qos_profile_sensor_data
+        )
+        self.wr_sub = self.create_subscription(
+            Float32, 
+            'VelocityEncR', 
+            self.wr_callback, 
+            qos.qos_profile_sensor_data
+        )
+        self.wl_sub = self.create_subscription(
+            Float32, 
+            'VelocityEncL', 
+            self.wl_callback, 
+            qos.qos_profile_sensor_data
+        )
         
-        wr,wl = self.get_wheel_speeds()
+        # State variables
+        self.x = 0.0
+        self.y = 0.0
+        self.q = None
+        self.wr = 0.0  # Angular velocity (rad/s)
+        self.wl = 0.0  # Angular velocity (rad/s)
+        
+        # Joint state initialization
+        self.joint_state = JointState()
+        self.joint_state.name = ['wheel_left_joint', 'wheel_right_joint']
+        self.joint_state.position = [0.0, 0.0]
+        self.joint_state.velocity = [0.0, 0.0]  # Will be updated dynamically
+        self.joint_state.effort = []
+        
+        self.start_time = self.get_clock().now().nanoseconds / 1e9
 
-        elapsed_time = (self.get_clock().now() - self.start_time).nanoseconds/1e9
+    def wr_callback(self, msg):
+        # Convert linear velocity (m/s) to angular velocity (rad/s)
+        self.wr = msg.data / self.wheel_radius
 
-        self.t2.header.stamp = self.get_clock().now().to_msg()
-        self.t2.header.frame_id = self.odom_frame
-        self.t2.child_frame_id = 'base_footprint'
-        self.t2.transform.translation.x = self.x
-        self.t2.transform.translation.y = self.y
-        self.t2.transform.translation.z = self.z
-        q = transforms3d.euler.euler2quat(0, 0, 0)       
-        self.t2.transform.rotation.x = q[1]
-        self.t2.transform.rotation.y = q[2]
-        self.t2.transform.rotation.z = q[3]
-        self.t2.transform.rotation.w = q[0]
-
-        self.t3.header.stamp = self.get_clock().now().to_msg()
-        self.t3.header.frame_id = 'base_link'
-        self.t3.child_frame_id = 'wheel_left_link'
-        self.t3.transform.translation.x = 0.052
-        self.t3.transform.translation.y = -0.095
-        self.t3.transform.translation.z = -0.0025
-        q = transforms3d.euler.euler2quat(0, wl * elapsed_time, 0)      
-        self.t3.transform.rotation.x = q[1]
-        self.t3.transform.rotation.y = q[2]
-        self.t3.transform.rotation.z = q[3]
-        self.t3.transform.rotation.w = q[0]
-
-        self.t4.header.stamp = self.get_clock().now().to_msg()
-        self.t4.header.frame_id = 'base_link'
-        self.t4.child_frame_id = 'wheel_right_link'
-        self.t4.transform.translation.x = 0.052
-        self.t4.transform.translation.y = 0.095
-        self.t4.transform.translation.z = -0.0025
-        q = transforms3d.euler.euler2quat(0, wr * elapsed_time, 0)
-        self.t4.transform.rotation.x = q[1]
-        self.t4.transform.rotation.y = q[2]
-        self.t4.transform.rotation.z = q[3]
-        self.t4.transform.rotation.w = q[0]
-
-        # Send the transform
-        self.tf_br2.sendTransform(self.t2)
-        self.tf_br3.sendTransform(self.t3)
-        self.tf_br4.sendTransform(self.t4)
+    def wl_callback(self, msg):
+        # Convert linear velocity (m/s) to angular velocity (rad/s)
+        self.wl = msg.data / self.wheel_radius
 
     def odom_callback(self, msg):
-        # Extract position
-        x = msg.pose.pose.position.x
-        y = msg.pose.pose.position.y
-        z = msg.pose.pose.position.z
+        initial_pose = self.get_parameter('initial_pose').get_parameter_value().double_array_value
+        self.x = initial_pose[0] + msg.pose.pose.position.x
+        self.y = initial_pose[1] + msg.pose.pose.position.y
+        self.q = msg.pose.pose.orientation
 
-        # Extract orientation
-        q = msg.pose.pose.orientation
+    def publish_static_transforms(self):
+        initial_pose = self.get_parameter('initial_pose').get_parameter_value().double_array_value
+        x = initial_pose[0]
+        y = initial_pose[1]
+        
+        static_transforms = [
+            self.create_transform(
+                parent_frame='world',
+                child_frame='map',
+                x=0.0, y=0.0, z=0.0,
+                roll=0.0, pitch=0.0, yaw=0.0
+            ),
+            self.create_transform(
+                parent_frame='map',
+                child_frame=self.odomFrame,
+                x=x, y=y, z=0.0,
+                roll=0.0, pitch=0.0, yaw=0.0
+            ),
+            self.create_transform(
+                parent_frame='base_footprint',
+                child_frame='base_link',
+                x=0.0, y=0.0, z=self.base_height,
+                roll=0.0, pitch=0.0, yaw=0.0
+            )
+        ]
+        self.tf_static_broadcaster.sendTransform(static_transforms)
 
-        # Create & publish the transform from odom to base_link
-        t = TransformStamped()
-        t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'base_footprint'
-        t.child_frame_id = 'base_link'
-        t.transform.translation.x = x
-        t.transform.translation.y = y
-        t.transform.translation.z = z  # Adjust z position if needed
-        t.transform.rotation = q
+    def publish_dynamic_transforms(self):
+        current_time = self.get_clock().now().nanoseconds / 1e9
+        dt = current_time - self.start_time
+        self.start_time = current_time
+        
+        # Update joint positions
+        self.joint_state.position[0] += self.wl * dt
+        self.joint_state.position[1] += self.wr * dt
+        
+        # Keep positions within [-π, π] for visualization (optional)
+        self.joint_state.position = [
+            (pos + np.pi) % (2 * np.pi) - np.pi 
+            for pos in self.joint_state.position
+        ]
+        
+        # Update joint velocities
+        self.joint_state.velocity = [self.wl, self.wr]
+        
+        # Publish joint states
+        self.joint_state.header.stamp = self.get_clock().now().to_msg()
+        self.joint_pub.publish(self.joint_state)
+        
+        # Publish base_link transform
+        dynamic_transform = TransformStamped()
+        dynamic_transform.header.stamp = self.get_clock().now().to_msg()
+        dynamic_transform.header.frame_id = self.odomFrame
+        dynamic_transform.child_frame_id = 'base_footprint'
+        
+        dynamic_transform.transform.translation.x = self.x
+        dynamic_transform.transform.translation.y = self.y
+        dynamic_transform.transform.translation.z = self.base_height
+        
+        if self.q:
+            dynamic_transform.transform.rotation = self.q
+        else:
+            dynamic_transform.transform.rotation.w = 1.0  # Default to no rotation
+        
+        self.tf_broadcaster.sendTransform(dynamic_transform)
 
-        self.tf_broadcaster.sendTransform(t)
+    def timer_callback(self):
+        self.publish_dynamic_transforms()
 
-    def get_wheel_speeds(self): 
-
-        # Calculate the wheel speeds based on the linear and angular velocities 
-
-        wr = 0.0 
-
-        wl = 0.0 
-
-        wr = (2*self.v + self.w*self.L)/(2*self.r)
-
-        wl = (2*self.v - self.w*self.L)/(2*self.r)
-
-        if (wr == 0 and wl == 0):
-            
-            wr = self.v + (self.w*self.L)/2
-            
-            wl = self.v - (self.w*self.L)/2
-
-        return wr, wl 
+    def create_transform(self, parent_frame, child_frame, x, y, z, roll, pitch, yaw):
+        transform = TransformStamped()
+        transform.header.stamp = self.get_clock().now().to_msg()
+        transform.header.frame_id = parent_frame
+        transform.child_frame_id = child_frame
+        
+        transform.transform.translation.x = x
+        transform.transform.translation.y = y
+        transform.transform.translation.z = z
+        
+        q = transforms3d.euler.euler2quat(roll, pitch, yaw)
+        transform.transform.rotation.x = q[1]
+        transform.transform.rotation.y = q[2]
+        transform.transform.rotation.z = q[3]
+        transform.transform.rotation.w = q[0]
+        
+        return transform
 
 def main(args=None):
     rclpy.init(args=args)
-
-    node = PuzzlebotTFBroadcaster()
-
+    node = JointStatePublisher()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
-        if rclpy.ok():  # Ensure shutdown is only called once
-            rclpy.shutdown()
         node.destroy_node()
-
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

@@ -18,6 +18,8 @@ class Localisation(Node):
     def __init__(self):
         super().__init__('localisation')
 
+        self.namespace = self.get_namespace().strip('/')
+
         self.declare_parameter('aruco_observation_noise_matrix', [0.02, 0.001, 0.001, 0.02]) # Noise matrix for ArUco observations
         self.declare_parameter(
     'aruco_poses',
@@ -56,7 +58,7 @@ class Localisation(Node):
 
         self.puzzlebot_kinematic_model = puzzlebot_kinematics.get_puzzlebot_kinematic_model(self.r, self.L) # Kinematic model to go from wheel speeds to robot velocities
         self.wheels_speeds = np.array([0., 0.]) # Wheels speeds in rad/s
-        self.puzzlebot_pose = np.array([self.x, self.x, self.theta]) # Puzzlebot pose [x, y, theta] in meters and radians
+        self.puzzlebot_pose = np.array([self.x, self.y, self.theta]) # Puzzlebot pose [x, y, theta] in meters and radians
         self.covariance_matrix = np.zeros((3, 3)) # Covariance matrix for the pose estimation
 
         self.create_timer(0.05, self.timer_callback)
@@ -65,7 +67,7 @@ class Localisation(Node):
         self.map_odom_transform = TransformStamped()
         self.map_odom_transform.header.stamp = self.get_clock().now().to_msg()
         self.map_odom_transform.header.frame_id = 'map'
-        self.map_odom_transform.child_frame_id = f'odom'
+        self.map_odom_transform.child_frame_id = f'{self.namespace}/odom'
         self.map_odom_transform.transform.translation.x = 0.0
         self.map_odom_transform.transform.translation.y = 0.0
         self.map_odom_transform.transform.translation.z = 0.0
@@ -84,6 +86,8 @@ class Localisation(Node):
 
         aruco_observation = (msg.distance, msg.angle)
 
+        self.get_logger().info(f'Received ArUco observation for ID {aruco_id}: distance={aruco_observation[0]}, angle={aruco_observation[1]}')
+
         # Get the transform from map to the base_footprint frame
         map_base_footprint_tf = self.tf_buffer.lookup_transform('map', 'base_footprint', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=0.25))
 
@@ -94,6 +98,7 @@ class Localisation(Node):
                                                         map_base_footprint_tf.transform.rotation.x,
                                                         map_base_footprint_tf.transform.rotation.y,
                                                         map_base_footprint_tf.transform.rotation.z])[2]
+        
         odometry_observation = eyes.observate_from_deltas(delta_x, delta_y, puzzlebot_theta_from_map)
 
         # Get the linearized observation matrix
@@ -113,6 +118,8 @@ class Localisation(Node):
         odom_base_footprint_tf = self.tf_buffer.lookup_transform('odom', 'base_footprint', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=0.25))
         # Shift the puzzlebot theta using the kalman shift
         puzzlebot_theta_from_map += kalman_shift[2]
+
+        
         # Convert the puzzlebot theta to quaternion
         q = transforms3d.euler.euler2quat(0.0, 0.0, puzzlebot_theta_from_map)
         # Shift the map to base_footprint transform usin the kalman shift
@@ -135,6 +142,14 @@ class Localisation(Node):
         self.map_odom_transform.transform.rotation.z = q[3]
         self.map_odom_transform.transform.rotation.w = q[0]
 
+        self.get_logger().info(f'Updated pose: x={map_base_footprint_tf.transform.translation.x:.2f}, y={map_base_footprint_tf.transform.translation.y:.2f}, theta={puzzlebot_theta_from_map:.2f} rad')
+
+        
+        # Update the puzzlebot pose
+        self.puzzlebot_pose[0] = map_base_footprint_tf.transform.translation.x
+        self.puzzlebot_pose[1] = map_base_footprint_tf.transform.translation.y
+        self.puzzlebot_pose[2] = maths.get_normalized_angle(puzzlebot_theta_from_map)
+    
         # Update the covariance matrix
         self.covariance_matrix = (np.eye(3) - K @ linearized_observation_matrix) @ self.covariance_matrix
 
@@ -142,7 +157,9 @@ class Localisation(Node):
 
         speeds = self.puzzlebot_kinematic_model @ self.wheels_speeds
         current_time = self.get_clock().now()
-        dt = (current_time - self.prev_time).nanoseconds / 1e-9
+        dt = (current_time - self.prev_time).nanoseconds / 1e9
+
+        self.get_logger().info(f'Current pose: {self.puzzlebot_pose[0]:.2f}, {self.puzzlebot_pose[1]:.2f}, {self.puzzlebot_pose[2]:.2f} rad')
 
         # Get the current linearized puzzlebot model
         linearized_puzzlebot_model = puzzlebot_kinematics.get_linearized_puzzlebot_model_matrix(speeds[0], self.puzzlebot_pose[2], dt)
@@ -164,8 +181,6 @@ class Localisation(Node):
 
         self.publish_odometry(speeds[0], speeds[1])
 
-        # Update the last time
-        self.prev_time = self.get_clock().now()
 
     def wr_callback(self, msg):
         self.wheels_speeds[0] = msg.data
@@ -209,14 +224,17 @@ class Localisation(Node):
         odom_msg.twist.twist.angular.y = 0.0
         odom_msg.twist.twist.angular.z = w
 
+    
         # Publish the odometry message
         self.odom_pub.publish(odom_msg)
-        self.pose_pub.publish(odom_msg)
 
         # Update the map odom transform timestamp
         self.map_odom_transform.header.stamp = self.get_clock().now().to_msg()
         # Publish the map odom transform
         self.tf_broadcaster.sendTransform(self.map_odom_transform)  
+
+        # Update the last time
+        self.prev_time = self.get_clock().now()
 
 
 def main(args=None):

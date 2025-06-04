@@ -75,6 +75,8 @@ class Bug0(Node):
         orientation_q = msg.pose.pose.orientation
         _, _, self.yaw = euler_from_quaternion([orientation_q.x, orientation_q.y, 
                                               orientation_q.z, orientation_q.w])
+        
+        self.get_logger().info(f"Posición actual: {self.position}, Orientación (yaw): {self.yaw}")
 
     def set_goal(self, x, y):
         """Establece el punto objetivo."""
@@ -217,7 +219,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     controller = Bug0()
-    controller.set_goal(1.2, -1.48)  # Establece el objetivo
+    controller.set_goal(0.5, 0.6)  # Establece el objetivo
 
     try:
         rclpy.spin(controller)
